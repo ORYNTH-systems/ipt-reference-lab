@@ -3,35 +3,42 @@
     "title":  "IPT vs POB Boundary",
     "domain":  "Constitutional Boundary Protection",
     "bounded_system":  {
-
+                           "boundary_rule":  "IPT evaluates preservation; POB verifies occurrence or non-occurrence.",
+                           "name":  "IPT vs POB Boundary",
+                           "id":  "CB-094"
                        },
     "preservation_properties":  [
-
+                                    "verification_boundary",
+                                    "preservation_occurrence_separation"
                                 ],
     "observables":  [
-
+                        "ipt_integrity_state",
+                        "pob_occurrence_state"
                     ],
     "evidence_set":  [
-
+                         "ipt_evaluation",
+                         "pob_verification_record"
                      ],
     "derived_indicators":  [
-
+                               "preservation_not_occurrence",
+                               "boundary_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "POB occurrence proof does not substitute for IPT integrity state"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-094",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "constitutional_boundary_cases":  1
                                       }
 }

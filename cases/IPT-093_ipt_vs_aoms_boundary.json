@@ -3,35 +3,43 @@
     "title":  "IPT vs AOMS Boundary",
     "domain":  "Constitutional Boundary Protection",
     "bounded_system":  {
-
+                           "boundary_rule":  "IPT evaluates preservation; AOMS evaluates orchestration eligibility.",
+                           "name":  "IPT vs AOMS Boundary",
+                           "id":  "CB-093"
                        },
     "preservation_properties":  [
-
+                                    "scope_separation",
+                                    "orchestration_boundary"
                                 ],
     "observables":  [
-
+                        "ipt_state",
+                        "aoms_eligibility_state"
                     ],
     "evidence_set":  [
-
+                         "ipt_record",
+                         "aoms_record"
                      ],
     "derived_indicators":  [
-
+                               "preservation_not_orchestration",
+                               "boundary_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "AOMS eligibility is not IPT preservation",
+                               "architectural boundary holds"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-093",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "constitutional_boundary_cases":  1
                                       }
 }

@@ -3,35 +3,43 @@
     "title":  "Non-Sovereign Evaluation",
     "domain":  "Constitutional Boundary Protection",
     "bounded_system":  {
-
+                           "boundary_rule":  "IPT may evaluate integrity but does not assert sovereign authority over the evaluated object.",
+                           "name":  "Non-Sovereign Evaluation",
+                           "id":  "CB-095"
                        },
     "preservation_properties":  [
-
+                                    "non_sovereignty",
+                                    "evaluation_constraint"
                                 ],
     "observables":  [
-
+                        "evaluation_claim",
+                        "authority_claim"
                     ],
     "evidence_set":  [
-
+                         "evaluation_record",
+                         "authority_boundary"
                      ],
     "derived_indicators":  [
-
+                               "no_sovereign_claim",
+                               "evaluation_limited"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "evaluation does not create authority",
+                               "IPT remains non-sovereign"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-095",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "constitutional_boundary_cases":  1
                                       }
 }

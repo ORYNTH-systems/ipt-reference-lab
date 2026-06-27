@@ -3,35 +3,53 @@
     "title":  "Constitutional Integrity Evaluation",
     "domain":  "Constitutional Boundary Protection",
     "bounded_system":  {
-
+                           "boundary_rule":  "IPT performs constitutional integrity evaluation over bounded systems using evidence, continuity, degradation, recoverability, measurement, and admissibility constraints.",
+                           "name":  "Constitutional Integrity Evaluation",
+                           "id":  "CB-100"
                        },
     "preservation_properties":  [
-
+                                    "constitutional_integrity_evaluation",
+                                    "corpus_closure",
+                                    "boundary_protection"
                                 ],
     "observables":  [
-
+                        "bounded_system",
+                        "evidence_state",
+                        "continuity_state",
+                        "degradation_state",
+                        "recoverability_state",
+                        "measurement_state"
                     ],
     "evidence_set":  [
-
+                         "full_corpus_trace",
+                         "constitutional_domain_map",
+                         "evaluation_record"
                      ],
     "derived_indicators":  [
-
+                               "constitutional_evaluation_complete",
+                               "all_domains_integrated",
+                               "corpus_closed"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "all IPT domains are represented",
+                               "evaluation is constitutionally bounded",
+                               "corpus closure is validated"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-100",
+                                 "result":  "PASS",
+                                 "corpus":  "closed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "corpus_complete":  1,
+                                          "constitutional_closure_cases":  1
                                       }
 }

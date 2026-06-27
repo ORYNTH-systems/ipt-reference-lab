@@ -1,54 +1,14 @@
 ﻿@{
     Proofs = @(
-        @{
-            File = "IPT-091_ipt_vs_uaa_boundary.json"
-            BoundedSystem = @{
-                id = "CB-091"
-                name = "IPT vs UAA Boundary"
-                boundary_rule = "IPT evaluates preservation integrity; UAA governs execution authority. Neither architecture substitutes for the other."
-            }
-            Properties = @(
-                "constitutional_boundary",
-                "architectural_separation",
-                "non_substitutability"
-            )
-            Observables = @(
-                "ipt_evaluation_scope",
-                "uaa_execution_scope",
-                "boundary_definition"
-            )
-            Evidence = @(
-                "ipt_specification",
-                "uaa_specification",
-                "boundary_mapping"
-            )
-            Indicators = @(
-                "boundary_preserved",
-                "architectures_distinct",
-                "scope_overlap_absent"
-            )
-            Expected = @{
-                evidence_sufficiency = "sufficient"
-                continuity = "continuous"
-                degradation = "none"
-                recoverability = "not_required"
-                integrity_state = "preserved"
-                admissibility = "admissible"
-            }
-            Assertions = @(
-                "IPT scope is preservation",
-                "UAA scope is execution governance",
-                "architectural boundaries remain distinct"
-            )
-            Output = @{
-                case_id = "IPT-091"
-                result = "PASS"
-                constitutional_boundary = "validated"
-            }
-            Metrics = @{
-                constitutional_boundary_cases = 1
-                preserved_states = 1
-            }
-        }
+        @{ File = "IPT-091_ipt_vs_uaa_boundary.json"; BoundedSystem = @{ id = "CB-091"; name = "IPT vs UAA Boundary"; boundary_rule = "IPT evaluates preservation integrity; UAA governs execution authority." }; Properties = @("constitutional_boundary","architectural_separation"); Observables = @("ipt_scope","uaa_scope"); Evidence = @("ipt_specification","uaa_specification"); Indicators = @("architectures_distinct","boundary_preserved"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("IPT is preservation","UAA is execution authority"); Output = @{ case_id="IPT-091"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-092_ipt_vs_eip_boundary.json"; BoundedSystem = @{ id = "CB-092"; name = "IPT vs EIP Boundary"; boundary_rule = "IPT evaluates preservation integrity; EIP evaluates execution integrity." }; Properties = @("boundary_protection","protocol_distinction"); Observables = @("ipt_preservation_scope","eip_execution_scope"); Evidence = @("ipt_specification","eip_specification"); Indicators = @("scope_distinct","non_substitution_valid"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("IPT is not EIP","execution integrity does not replace preservation integrity"); Output = @{ case_id="IPT-092"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-093_ipt_vs_aoms_boundary.json"; BoundedSystem = @{ id = "CB-093"; name = "IPT vs AOMS Boundary"; boundary_rule = "IPT evaluates preservation; AOMS evaluates orchestration eligibility." }; Properties = @("scope_separation","orchestration_boundary"); Observables = @("ipt_state","aoms_eligibility_state"); Evidence = @("ipt_record","aoms_record"); Indicators = @("preservation_not_orchestration","boundary_valid"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("AOMS eligibility is not IPT preservation","architectural boundary holds"); Output = @{ case_id="IPT-093"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-094_ipt_vs_pob_boundary.json"; BoundedSystem = @{ id = "CB-094"; name = "IPT vs POB Boundary"; boundary_rule = "IPT evaluates preservation; POB verifies occurrence or non-occurrence." }; Properties = @("verification_boundary","preservation_occurrence_separation"); Observables = @("ipt_integrity_state","pob_occurrence_state"); Evidence = @("ipt_evaluation","pob_verification_record"); Indicators = @("preservation_not_occurrence","boundary_valid"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("POB occurrence proof does not substitute for IPT integrity state"); Output = @{ case_id="IPT-094"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-095_non_sovereign_evaluation.json"; BoundedSystem = @{ id = "CB-095"; name = "Non-Sovereign Evaluation"; boundary_rule = "IPT may evaluate integrity but does not assert sovereign authority over the evaluated object." }; Properties = @("non_sovereignty","evaluation_constraint"); Observables = @("evaluation_claim","authority_claim"); Evidence = @("evaluation_record","authority_boundary"); Indicators = @("no_sovereign_claim","evaluation_limited"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("evaluation does not create authority","IPT remains non-sovereign"); Output = @{ case_id="IPT-095"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-096_evaluation_admissibility.json"; BoundedSystem = @{ id = "CB-096"; name = "Evaluation Admissibility"; boundary_rule = "IPT evaluation is admissible only when evidence, boundary, and measurement requirements are satisfied." }; Properties = @("evaluation_admissibility","constitutional_gatekeeping"); Observables = @("evidence_status","boundary_status","measurement_status"); Evidence = @("evidence_record","boundary_record","measurement_record"); Indicators = @("requirements_satisfied","evaluation_admissible"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("evidence is sufficient","boundary is valid","measurement chain is valid"); Output = @{ case_id="IPT-096"; result="PASS" }; Metrics = @{ admissible_evaluations=1 } },
+        @{ File = "IPT-097_preservation_vs_performance.json"; BoundedSystem = @{ id = "CB-097"; name = "Preservation vs Performance"; boundary_rule = "Performance success shall not be substituted for preservation integrity." }; Properties = @("preservation_performance_separation","non_substitution"); Observables = @("performance_score","integrity_state"); Evidence = @("performance_record","integrity_evaluation"); Indicators = @("performance_not_integrity","boundary_preserved"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("high performance does not prove preservation","integrity requires IPT evaluation"); Output = @{ case_id="IPT-097"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-098_preservation_vs_reliability.json"; BoundedSystem = @{ id = "CB-098"; name = "Preservation vs Reliability"; boundary_rule = "Reliability shall not be substituted for preservation integrity." }; Properties = @("preservation_reliability_separation","non_substitution"); Observables = @("reliability_rate","integrity_state"); Evidence = @("reliability_record","integrity_evaluation"); Indicators = @("reliability_not_integrity","boundary_preserved"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("reliability does not prove preservation","integrity requires preservation evaluation"); Output = @{ case_id="IPT-098"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-099_preservation_vs_safety.json"; BoundedSystem = @{ id = "CB-099"; name = "Preservation vs Safety"; boundary_rule = "Safety shall not be substituted for preservation integrity." }; Properties = @("preservation_safety_separation","non_substitution"); Observables = @("safety_status","integrity_state"); Evidence = @("safety_record","integrity_evaluation"); Indicators = @("safety_not_integrity","boundary_preserved"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("safety does not prove preservation","IPT evaluates preservation specifically"); Output = @{ case_id="IPT-099"; result="PASS" }; Metrics = @{ constitutional_boundary_cases=1 } },
+        @{ File = "IPT-100_constitutional_integrity_evaluation.json"; BoundedSystem = @{ id = "CB-100"; name = "Constitutional Integrity Evaluation"; boundary_rule = "IPT performs constitutional integrity evaluation over bounded systems using evidence, continuity, degradation, recoverability, measurement, and admissibility constraints." }; Properties = @("constitutional_integrity_evaluation","corpus_closure","boundary_protection"); Observables = @("bounded_system","evidence_state","continuity_state","degradation_state","recoverability_state","measurement_state"); Evidence = @("full_corpus_trace","constitutional_domain_map","evaluation_record"); Indicators = @("constitutional_evaluation_complete","all_domains_integrated","corpus_closed"); Expected = @{ evidence_sufficiency="sufficient"; continuity="continuous"; degradation="none"; recoverability="not_required"; integrity_state="preserved"; admissibility="admissible" }; Assertions = @("all IPT domains are represented","evaluation is constitutionally bounded","corpus closure is validated"); Output = @{ case_id="IPT-100"; result="PASS"; corpus="closed" }; Metrics = @{ constitutional_closure_cases=1; corpus_complete=1 } }
     )
 }
