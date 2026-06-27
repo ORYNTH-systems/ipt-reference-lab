@@ -3,35 +3,50 @@
     "title":  "Corrupted Evidence",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Corrupted evidence is excluded unless recovery validates integrity.",
+                           "name":  "Corrupted Evidence",
+                           "id":  "ES-016"
                        },
     "preservation_properties":  [
-
+                                    "corruption_detection",
+                                    "evidence_integrity_control"
                                 ],
     "observables":  [
-
+                        "evidence_checksum",
+                        "expected_checksum",
+                        "corruption_flag"
                     ],
     "evidence_set":  [
-
+                         "submitted_evidence",
+                         "integrity_hash",
+                         "corruption_report"
                      ],
     "derived_indicators":  [
-
+                               "corruption_detected",
+                               "evidence_excluded",
+                               "recovery_required"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable_if_clean_copy_exists",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "insufficient"
                  },
     "runtime_assertions":  [
-
+                               "checksum mismatch is detected",
+                               "corrupted evidence is excluded",
+                               "admissibility equals inadmissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-016",
+                                 "evidence_integrity":  "corrupted",
+                                 "result":  "PASS",
+                                 "evidence_sufficiency":  "insufficient"
                              },
     "expected_metrics_contribution":  {
-
+                                          "corrupted_evidence_cases":  1,
+                                          "inadmissible_evaluations":  1
                                       }
 }

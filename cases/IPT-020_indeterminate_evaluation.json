@@ -3,35 +3,49 @@
     "title":  "Indeterminate Evaluation",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "When evidence cannot support a preservation judgment, the correct state is indeterminate, not guessed.",
+                           "name":  "Indeterminate Evaluation",
+                           "id":  "ES-020"
                        },
     "preservation_properties":  [
-
+                                    "indeterminacy_control",
+                                    "non_speculative_evaluation"
                                 ],
     "observables":  [
-
+                        "evidence_inventory",
+                        "unknown_fields",
+                        "blocked_judgment"
                     ],
     "evidence_set":  [
-
+                         "incomplete_evidence_manifest",
+                         "uncertainty_record"
                      ],
     "derived_indicators":  [
-
+                               "judgment_not_supported",
+                               "indeterminate_required",
+                               "speculation_prevented"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "indeterminate",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "indeterminate"
                  },
     "runtime_assertions":  [
-
+                               "unsupported judgment is not issued",
+                               "integrity_state equals indeterminate",
+                               "admissibility equals inadmissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-020",
+                                 "admissibility":  "inadmissible",
+                                 "result":  "PASS",
+                                 "integrity_state":  "indeterminate"
                              },
     "expected_metrics_contribution":  {
-
+                                          "speculation_prevented":  1,
+                                          "indeterminate_cases":  1
                                       }
 }

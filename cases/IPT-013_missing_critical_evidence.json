@@ -3,35 +3,48 @@
     "title":  "Missing Critical Evidence",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Evaluation is inadmissible when required critical evidence is absent.",
+                           "name":  "Missing Critical Evidence",
+                           "id":  "ES-013"
                        },
     "preservation_properties":  [
-
+                                    "critical_evidence_requirement",
+                                    "inadmissible_gap_detection"
                                 ],
     "observables":  [
-
+                        "required_critical_evidence",
+                        "submitted_evidence",
+                        "gap_record"
                     ],
     "evidence_set":  [
-
+                         "required_evidence_schema",
+                         "submitted_evidence_manifest"
                      ],
     "derived_indicators":  [
-
+                               "critical_gap_detected",
+                               "evaluation_blocked"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "indeterminate",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "insufficient"
                  },
     "runtime_assertions":  [
-
+                               "critical evidence missing is detected",
+                               "admissibility equals inadmissible",
+                               "no integrity judgment is issued"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-013",
+                                 "admissibility":  "inadmissible",
+                                 "result":  "PASS",
+                                 "evidence_sufficiency":  "insufficient"
                              },
     "expected_metrics_contribution":  {
-
+                                          "insufficient_evidence_cases":  1,
+                                          "inadmissible_evaluations":  1
                                       }
 }

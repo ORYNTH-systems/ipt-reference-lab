@@ -3,35 +3,50 @@
     "title":  "Delayed Evidence Arrival",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Late evidence may update admissibility only through declared re-evaluation.",
+                           "name":  "Delayed Evidence Arrival",
+                           "id":  "ES-015"
                        },
     "preservation_properties":  [
-
+                                    "temporal_evidence_handling",
+                                    "reevaluation_control"
                                 ],
     "observables":  [
-
+                        "initial_evidence_time",
+                        "late_evidence_time",
+                        "reevaluation_record"
                     ],
     "evidence_set":  [
-
+                         "initial_evidence_manifest",
+                         "delayed_evidence_manifest",
+                         "temporal_log"
                      ],
     "derived_indicators":  [
-
+                               "evidence_arrived_late",
+                               "reevaluation_required",
+                               "temporal_gap_recorded"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible_after_reevaluation",
+                     "evidence_sufficiency":  "sufficient_after_arrival"
                  },
     "runtime_assertions":  [
-
+                               "late evidence timestamp exists",
+                               "reevaluation record exists",
+                               "initial and revised admissibility are separated"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-015",
+                                 "admissibility":  "admissible_after_reevaluation",
+                                 "result":  "PASS",
+                                 "evidence_sufficiency":  "sufficient_after_arrival"
                              },
     "expected_metrics_contribution":  {
-
+                                          "reevaluations":  1,
+                                          "delayed_evidence_cases":  1
                                       }
 }

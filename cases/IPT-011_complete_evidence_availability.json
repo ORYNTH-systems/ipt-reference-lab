@@ -3,35 +3,52 @@
     "title":  "Complete Evidence Availability",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Evaluation proceeds when all constitutionally required evidence is present.",
+                           "name":  "Complete Evidence Evaluation",
+                           "id":  "ES-011"
                        },
     "preservation_properties":  [
-
+                                    "evidence_completeness",
+                                    "evaluation_admissibility",
+                                    "source_traceability"
                                 ],
     "observables":  [
-
+                        "required_evidence_list",
+                        "submitted_evidence_list",
+                        "source_metadata"
                     ],
     "evidence_set":  [
-
+                         "system_manifest",
+                         "continuity_record",
+                         "measurement_record",
+                         "source_registry"
                      ],
     "derived_indicators":  [
-
+                               "all_required_evidence_present",
+                               "sources_traceable",
+                               "no_critical_gap"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "all required evidence exists",
+                               "each evidence item has source metadata",
+                               "no critical evidence is missing"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-011",
+                                 "admissibility":  "admissible",
+                                 "result":  "PASS",
+                                 "evidence_sufficiency":  "sufficient"
                              },
     "expected_metrics_contribution":  {
-
+                                          "admissible_evaluations":  1,
+                                          "sufficient_evidence_cases":  1
                                       }
 }

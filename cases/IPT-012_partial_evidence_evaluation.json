@@ -3,35 +3,50 @@
     "title":  "Partial Evidence Evaluation",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Partial evidence may support limited evaluation only within declared scope.",
+                           "name":  "Partial Evidence Evaluation",
+                           "id":  "ES-012"
                        },
     "preservation_properties":  [
-
+                                    "partial_evidence_handling",
+                                    "scope_limited_admissibility"
                                 ],
     "observables":  [
-
+                        "available_evidence",
+                        "missing_evidence",
+                        "scope_limit"
                     ],
     "evidence_set":  [
-
+                         "partial_manifest",
+                         "available_observables",
+                         "missing_evidence_record"
                      ],
     "derived_indicators":  [
-
+                               "partial_evidence_detected",
+                               "critical_gap_absent",
+                               "scope_restricted"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "partial"
                  },
     "runtime_assertions":  [
-
+                               "partial evidence is declared",
+                               "evaluation scope is restricted",
+                               "conditional admissibility is applied"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-012",
+                                 "admissibility":  "conditionally_admissible",
+                                 "result":  "PASS",
+                                 "evidence_sufficiency":  "partial"
                              },
     "expected_metrics_contribution":  {
-
+                                          "conditional_admissibility":  1,
+                                          "partial_evidence_cases":  1
                                       }
 }

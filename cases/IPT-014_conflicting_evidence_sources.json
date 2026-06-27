@@ -3,35 +3,50 @@
     "title":  "Conflicting Evidence Sources",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Conflicting evidence must be resolved or classified before preservation judgment.",
+                           "name":  "Conflicting Evidence Sources",
+                           "id":  "ES-014"
                        },
     "preservation_properties":  [
-
+                                    "evidence_conflict_detection",
+                                    "resolution_requirement"
                                 ],
     "observables":  [
-
+                        "source_a_claim",
+                        "source_b_claim",
+                        "conflict_matrix"
                     ],
     "evidence_set":  [
-
+                         "evidence_source_a",
+                         "evidence_source_b",
+                         "conflict_record"
                      ],
     "derived_indicators":  [
-
+                               "conflict_detected",
+                               "resolution_required",
+                               "judgment_suspended_until_resolved"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "indeterminate",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible_until_resolved",
+                     "evidence_sufficiency":  "conflicted"
                  },
     "runtime_assertions":  [
-
+                               "conflict is detected",
+                               "conflict record exists",
+                               "preservation judgment is suspended"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-014",
+                                 "admissibility":  "inadmissible_until_resolved",
+                                 "result":  "PASS",
+                                 "evidence_sufficiency":  "conflicted"
                              },
     "expected_metrics_contribution":  {
-
+                                          "suspended_evaluations":  1,
+                                          "conflicting_evidence_cases":  1
                                       }
 }

@@ -3,35 +3,50 @@
     "title":  "Untrusted Evidence Source",
     "domain":  "Evidence Sufficiency",
     "bounded_system":  {
-
+                           "boundary_rule":  "Evidence from untrusted sources cannot support admissible preservation evaluation.",
+                           "name":  "Untrusted Evidence Source",
+                           "id":  "ES-017"
                        },
     "preservation_properties":  [
-
+                                    "source_trust_validation",
+                                    "evidence_source_admissibility"
                                 ],
     "observables":  [
-
+                        "source_identity",
+                        "trust_registry_status",
+                        "evidence_claim"
                     ],
     "evidence_set":  [
-
+                         "source_registry",
+                         "submitted_evidence",
+                         "trust_policy"
                      ],
     "derived_indicators":  [
-
+                               "source_untrusted",
+                               "evidence_excluded",
+                               "evaluation_blocked"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "indeterminate",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "insufficient"
                  },
     "runtime_assertions":  [
-
+                               "source trust status is checked",
+                               "untrusted source evidence is excluded",
+                               "evaluation is blocked"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-017",
+                                 "source_trust":  "untrusted",
+                                 "result":  "PASS",
+                                 "admissibility":  "inadmissible"
                              },
     "expected_metrics_contribution":  {
-
+                                          "untrusted_source_cases":  1,
+                                          "inadmissible_evaluations":  1
                                       }
 }
