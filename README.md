@@ -4,8 +4,8 @@ Integrity Preservation Theory (IPT) is a constitutional framework for preservati
 
 ## Status
 
-Release: v0.1  
-Status: Stable reference implementation
+Release: v1.0.0  
+Status: Stable executable reference implementation
 
 ## Run Commands
 
