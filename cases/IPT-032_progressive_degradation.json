@@ -3,35 +3,52 @@
     "title":  "Progressive Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Progressive degradation is measured across sequential observations.",
+                           "name":  "Progressive Degradation System",
+                           "id":  "DG-032"
                        },
     "preservation_properties":  [
-
+                                    "degradation_trajectory",
+                                    "temporal_decline_detection",
+                                    "preservation_margin_tracking"
                                 ],
     "observables":  [
-
+                        "integrity_score_t1",
+                        "integrity_score_t2",
+                        "integrity_score_t3",
+                        "decline_rate"
                     ],
     "evidence_set":  [
-
+                         "temporal_health_log",
+                         "measurement_series",
+                         "trend_analysis"
                      ],
     "derived_indicators":  [
-
+                               "decline_detected",
+                               "degradation_progressive",
+                               "preservation_margin_reduced"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "progressive",
+                     "continuity":  "drifting",
+                     "integrity_state":  "drifting",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "multiple observations exist",
+                               "decline rate is computed",
+                               "degradation trend is classified"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-032",
+                                 "result":  "PASS",
+                                 "degradation":  "progressive",
+                                 "integrity_state":  "drifting"
                              },
     "expected_metrics_contribution":  {
-
+                                          "progressive_degradation_cases":  1,
+                                          "drifting_states":  1
                                       }
 }

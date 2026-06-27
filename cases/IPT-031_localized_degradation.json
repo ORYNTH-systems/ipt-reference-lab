@@ -3,35 +3,51 @@
     "title":  "Localized Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Localized degradation affects a bounded subsystem without collapsing the evaluative object.",
+                           "name":  "Localized Degradation System",
+                           "id":  "DG-031"
                        },
     "preservation_properties":  [
-
+                                    "localized_loss_detection",
+                                    "subsystem_containment",
+                                    "identity_preservation"
                                 ],
     "observables":  [
-
+                        "affected_component",
+                        "unaffected_components",
+                        "localized_failure_record"
                     ],
     "evidence_set":  [
-
+                         "component_health_log",
+                         "failure_scope_report",
+                         "boundary_map"
                      ],
     "derived_indicators":  [
-
+                               "degradation_localized",
+                               "core_identity_preserved",
+                               "collapse_not_detected"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "localized",
+                     "continuity":  "continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "affected component is identified",
+                               "degradation scope is bounded",
+                               "system identity remains continuous"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-031",
+                                 "result":  "PASS",
+                                 "degradation":  "localized",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "localized_degradation_cases":  1
                                       }
 }

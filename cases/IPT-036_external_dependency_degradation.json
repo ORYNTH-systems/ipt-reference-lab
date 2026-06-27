@@ -3,35 +3,51 @@
     "title":  "External Dependency Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "External dependency degradation is separated from internal degradation while preserving evaluative relevance.",
+                           "name":  "External Dependency Degradation System",
+                           "id":  "DG-036"
                        },
     "preservation_properties":  [
-
+                                    "external_dependency_classification",
+                                    "dependency_effect_mapping",
+                                    "internal_external_separation"
                                 ],
     "observables":  [
-
+                        "internal_state",
+                        "external_dependency_state",
+                        "dependency_effect"
                     ],
     "evidence_set":  [
-
+                         "internal_health_record",
+                         "dependency_status_record",
+                         "effect_mapping"
                      ],
     "derived_indicators":  [
-
+                               "external_degradation_detected",
+                               "internal_state_distinct",
+                               "dependency_effect_relevant"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable_if_dependency_restored",
+                     "degradation":  "external_dependency",
+                     "continuity":  "continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "dependency is labeled external",
+                               "internal state is evaluated separately",
+                               "dependency effect is mapped"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-036",
+                                 "result":  "PASS",
+                                 "degradation":  "external_dependency",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "external_dependency_degradation_cases":  1
                                       }
 }

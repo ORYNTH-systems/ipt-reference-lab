@@ -3,35 +3,51 @@
     "title":  "Sudden Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Sudden degradation is classified when preservation loss occurs between adjacent observations.",
+                           "name":  "Sudden Degradation System",
+                           "id":  "DG-033"
                        },
     "preservation_properties":  [
-
+                                    "abrupt_loss_detection",
+                                    "interval_change_classification",
+                                    "preservation_drop_measurement"
                                 ],
     "observables":  [
-
+                        "prior_integrity_state",
+                        "current_integrity_state",
+                        "delta_interval"
                     ],
     "evidence_set":  [
-
+                         "pre_event_record",
+                         "post_event_record",
+                         "event_delta_report"
                      ],
     "derived_indicators":  [
-
+                               "abrupt_drop_detected",
+                               "degradation_sudden",
+                               "prior_continuity_disrupted"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "sudden",
+                     "continuity":  "stressed",
+                     "integrity_state":  "degraded",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "prior state exists",
+                               "current state exists",
+                               "sudden preservation drop is detected"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-033",
+                                 "result":  "PASS",
+                                 "degradation":  "sudden",
+                                 "integrity_state":  "degraded"
                              },
     "expected_metrics_contribution":  {
-
+                                          "sudden_degradation_cases":  1,
+                                          "degraded_states":  1
                                       }
 }

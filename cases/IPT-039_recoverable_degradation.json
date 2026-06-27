@@ -3,35 +3,51 @@
     "title":  "Recoverable Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Recoverable degradation preserves enough identity-critical structure to support restoration.",
+                           "name":  "Recoverable Degradation System",
+                           "id":  "DG-039"
                        },
     "preservation_properties":  [
-
+                                    "recoverable_loss_detection",
+                                    "restoration_path_presence",
+                                    "identity_margin_retention"
                                 ],
     "observables":  [
-
+                        "degraded_component",
+                        "remaining_identity_properties",
+                        "restoration_path"
                     ],
     "evidence_set":  [
-
+                         "degradation_record",
+                         "identity_margin_report",
+                         "recovery_plan"
                      ],
     "derived_indicators":  [
-
+                               "degradation_present",
+                               "identity_margin_sufficient",
+                               "recovery_path_available"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "recoverable",
+                     "continuity":  "stressed",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "degradation is detected",
+                               "recovery path exists",
+                               "identity margin remains above collapse threshold"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-039",
+                                 "result":  "PASS",
+                                 "degradation":  "recoverable",
+                                 "recoverability":  "recoverable"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "recoverable_degradation_cases":  1
                                       }
 }

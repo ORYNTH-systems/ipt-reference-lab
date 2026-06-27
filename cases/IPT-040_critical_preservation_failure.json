@@ -3,35 +3,52 @@
     "title":  "Critical Preservation Failure",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Critical preservation failure blocks admissible integrity judgment unless failure itself is the evaluated result.",
+                           "name":  "Critical Preservation Failure System",
+                           "id":  "DG-040"
                        },
     "preservation_properties":  [
-
+                                    "critical_failure_detection",
+                                    "preservation_failure_classification",
+                                    "admissibility_control"
                                 ],
     "observables":  [
-
+                        "critical_property_status",
+                        "failure_record",
+                        "collapse_threshold"
                     ],
     "evidence_set":  [
-
+                         "critical_property_manifest",
+                         "failure_evidence",
+                         "threshold_record"
                      ],
     "derived_indicators":  [
-
+                               "critical_property_failed",
+                               "collapse_threshold_crossed",
+                               "evaluation_inadmissible"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "non_recoverable",
+                     "degradation":  "critical",
+                     "continuity":  "collapsed",
+                     "integrity_state":  "functional_collapse",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "critical property failure is detected",
+                               "collapse threshold is crossed",
+                               "admissibility equals inadmissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-040",
+                                 "result":  "PASS",
+                                 "degradation":  "critical",
+                                 "integrity_state":  "functional_collapse"
                              },
     "expected_metrics_contribution":  {
-
+                                          "inadmissible_evaluations":  1,
+                                          "critical_failure_cases":  1,
+                                          "functional_collapse_states":  1
                                       }
 }

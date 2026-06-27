@@ -3,35 +3,52 @@
     "title":  "Cascading Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Cascading degradation propagates across dependent components while preserving traceable causality.",
+                           "name":  "Cascading Degradation System",
+                           "id":  "DG-034"
                        },
     "preservation_properties":  [
-
+                                    "cascade_detection",
+                                    "dependency_propagation",
+                                    "causal_traceability"
                                 ],
     "observables":  [
-
+                        "initial_failure",
+                        "dependent_failures",
+                        "propagation_path"
                     ],
     "evidence_set":  [
-
+                         "dependency_graph",
+                         "failure_sequence_log",
+                         "cascade_analysis"
                      ],
     "derived_indicators":  [
-
+                               "cascade_detected",
+                               "propagation_path_valid",
+                               "multi_component_degradation"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "cascading",
+                     "continuity":  "fragmented",
+                     "integrity_state":  "fragmented",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "initial failure is identified",
+                               "propagation path is recorded",
+                               "fragmented integrity state is assigned"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-034",
+                                 "result":  "PASS",
+                                 "degradation":  "cascading",
+                                 "integrity_state":  "fragmented"
                              },
     "expected_metrics_contribution":  {
-
+                                          "fragmented_states":  1,
+                                          "inadmissible_evaluations":  1,
+                                          "cascading_degradation_cases":  1
                                       }
 }

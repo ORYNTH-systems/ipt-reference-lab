@@ -3,35 +3,52 @@
     "title":  "Irreversible Degradation",
     "domain":  "Degradation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Irreversible degradation is classified when identity-critical preservation properties cannot be restored.",
+                           "name":  "Irreversible Degradation System",
+                           "id":  "DG-038"
                        },
     "preservation_properties":  [
-
+                                    "irreversibility_detection",
+                                    "identity_critical_loss",
+                                    "non_recoverability"
                                 ],
     "observables":  [
-
+                        "lost_identity_property",
+                        "restoration_attempt",
+                        "restoration_result"
                     ],
     "evidence_set":  [
-
+                         "identity_property_manifest",
+                         "loss_record",
+                         "failed_restoration_report"
                      ],
     "derived_indicators":  [
-
+                               "identity_critical_loss_detected",
+                               "restoration_failed",
+                               "degradation_irreversible"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "non_recoverable",
+                     "degradation":  "irreversible",
+                     "continuity":  "collapsed",
+                     "integrity_state":  "functional_collapse",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "identity-critical property loss is recorded",
+                               "restoration attempt fails",
+                               "recoverability equals non_recoverable"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-038",
+                                 "result":  "PASS",
+                                 "degradation":  "irreversible",
+                                 "recoverability":  "non_recoverable"
                              },
     "expected_metrics_contribution":  {
-
+                                          "inadmissible_evaluations":  1,
+                                          "irreversible_degradation_cases":  1,
+                                          "functional_collapse_states":  1
                                       }
 }
