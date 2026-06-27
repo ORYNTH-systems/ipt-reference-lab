@@ -3,35 +3,50 @@
     "title":  "Declared Bounded System",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Implementations shall faithfully represent the declared constitutional bounded system.",
+                           "name":  "Declared Bounded System",
+                           "id":  "IF-071"
                        },
     "preservation_properties":  [
-
+                                    "implementation_fidelity",
+                                    "boundary_consistency",
+                                    "representation_integrity"
                                 ],
     "observables":  [
-
+                        "declared_boundary",
+                        "implemented_boundary",
+                        "implementation_version"
                     ],
     "evidence_set":  [
-
+                         "implementation_manifest",
+                         "boundary_specification",
+                         "version_record"
                      ],
     "derived_indicators":  [
-
+                               "boundary_matches",
+                               "implementation_complete",
+                               "version_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "declared boundary exists",
+                               "implemented boundary matches declaration",
+                               "implementation version exists"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-071",
+                                 "result":  "PASS",
+                                 "implementation":  "faithful"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "implementation_fidelity_cases":  1
                                       }
 }
