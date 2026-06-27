@@ -1,0 +1,20 @@
+{
+    "repository": "IPT Reference Lab",
+    "version": "0.1",
+    "total_cases": 100,
+    "average_support": 0.562,
+    "average_evidence": 0.766,
+    "average_continuity": 0.772,
+    "average_degradation": 0.262,
+    "average_recoverability": 0.638,
+    "integrity_states": {
+        "Stressed": 49,
+        "Indeterminate": 6,
+        "Drifting": 45
+    },
+    "admissibility": {
+        "Admissible": 87,
+        "Inadmissible": 6,
+        "Constrained": 7
+    }
+}
