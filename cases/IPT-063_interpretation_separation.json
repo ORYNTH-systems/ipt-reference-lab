@@ -3,35 +3,50 @@
     "title":  "Interpretation Separation",
     "domain":  "Measurement Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "Measurement acquisition must remain separate from interpretation and judgment.",
+                           "name":  "Interpretation Separation",
+                           "id":  "MA-063"
                        },
     "preservation_properties":  [
-
+                                    "measurement_interpretation_separation",
+                                    "non_conflation",
+                                    "evaluation_control"
                                 ],
     "observables":  [
-
+                        "measurement_value",
+                        "interpretation_rule",
+                        "judgment_output"
                     ],
     "evidence_set":  [
-
+                         "measurement_record",
+                         "interpretation_policy",
+                         "evaluation_trace"
                      ],
     "derived_indicators":  [
-
+                               "measurement_recorded_separately",
+                               "interpretation_rule_declared",
+                               "judgment_not_embedded_in_measurement"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "measurement exists before interpretation",
+                               "interpretation rule is separate",
+                               "judgment is not substituted for observable"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-063",
+                                 "result":  "PASS",
+                                 "separation":  "valid"
                              },
     "expected_metrics_contribution":  {
-
+                                          "interpretation_separation_cases":  1,
+                                          "preserved_states":  1
                                       }
 }

@@ -3,35 +3,51 @@
     "title":  "Measurement Bias Detection",
     "domain":  "Measurement Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "Measurement bias must be detected when systematic distortion affects preservation evaluation.",
+                           "name":  "Measurement Bias Detection",
+                           "id":  "MA-067"
                        },
     "preservation_properties":  [
-
+                                    "bias_detection",
+                                    "systematic_distortion_control",
+                                    "measurement_fairness"
                                 ],
     "observables":  [
-
+                        "measurement_distribution",
+                        "reference_distribution",
+                        "bias_delta"
                     ],
     "evidence_set":  [
-
+                         "measurement_sample",
+                         "reference_baseline",
+                         "bias_report"
                      ],
     "derived_indicators":  [
-
+                               "bias_detected",
+                               "systematic_distortion_present",
+                               "measurement_adjustment_required"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "conditionally_admissible",
+                     "recoverability":  "recoverable",
+                     "degradation":  "measurement_bias",
+                     "integrity_state":  "stressed",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "stressed"
                  },
     "runtime_assertions":  [
-
+                               "reference baseline exists",
+                               "bias delta is computed",
+                               "bias is classified separately from system degradation"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-067",
+                                 "admissibility":  "conditionally_admissible",
+                                 "result":  "PASS",
+                                 "measurement_bias":  "detected"
                              },
     "expected_metrics_contribution":  {
-
+                                          "conditional_admissibility":  1,
+                                          "measurement_bias_cases":  1
                                       }
 }

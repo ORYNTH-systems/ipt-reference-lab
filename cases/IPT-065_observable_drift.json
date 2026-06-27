@@ -3,35 +3,51 @@
     "title":  "Observable Drift",
     "domain":  "Measurement Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "Observable drift must be detected before derived integrity claims are made.",
+                           "name":  "Observable Drift",
+                           "id":  "MA-065"
                        },
     "preservation_properties":  [
-
+                                    "observable_drift_detection",
+                                    "measurement_stability",
+                                    "drift_classification"
                                 ],
     "observables":  [
-
+                        "baseline_observable",
+                        "current_observable",
+                        "drift_delta"
                     ],
     "evidence_set":  [
-
+                         "baseline_measurement_record",
+                         "current_measurement_record",
+                         "drift_analysis"
                      ],
     "derived_indicators":  [
-
+                               "observable_drift_detected",
+                               "drift_delta_computed",
+                               "measurement_stability_reduced"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "conditionally_admissible",
+                     "recoverability":  "recoverable",
+                     "degradation":  "progressive",
+                     "integrity_state":  "drifting",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "drifting"
                  },
     "runtime_assertions":  [
-
+                               "baseline observable exists",
+                               "current observable exists",
+                               "drift delta is computed"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-065",
+                                 "result":  "PASS",
+                                 "observable_drift":  "detected",
+                                 "integrity_state":  "drifting"
                              },
     "expected_metrics_contribution":  {
-
+                                          "observable_drift_cases":  1,
+                                          "drifting_states":  1
                                       }
 }

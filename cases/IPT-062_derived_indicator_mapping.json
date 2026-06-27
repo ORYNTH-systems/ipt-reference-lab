@@ -3,35 +3,50 @@
     "title":  "Derived Indicator Mapping",
     "domain":  "Measurement Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "Derived indicators must be traceable to declared observables.",
+                           "name":  "Derived Indicator Mapping",
+                           "id":  "MA-062"
                        },
     "preservation_properties":  [
-
+                                    "indicator_traceability",
+                                    "observable_to_indicator_mapping",
+                                    "derivation_validity"
                                 ],
     "observables":  [
-
+                        "raw_observable",
+                        "mapping_rule",
+                        "derived_indicator"
                     ],
     "evidence_set":  [
-
+                         "observable_record",
+                         "mapping_specification",
+                         "derivation_log"
                      ],
     "derived_indicators":  [
-
+                               "mapping_exists",
+                               "indicator_traceable",
+                               "derivation_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "mapping rule exists",
+                               "derived indicator references observables",
+                               "indicator is traceable"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-062",
+                                 "result":  "PASS",
+                                 "mapping":  "valid"
                              },
     "expected_metrics_contribution":  {
-
+                                          "admissible_evaluations":  1,
+                                          "derived_indicator_mapping_cases":  1
                                       }
 }
