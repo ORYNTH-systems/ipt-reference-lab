@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-030",
+    "title": "Continuity Collapse",
+    "category": "Continuity",
+    "evidence_sufficiency": 0.25,
+    "continuity": 0.25,
+    "degradation": 0.85,
+    "recoverability": 0.2,
+    "integrity_preservation_support": 0.0,
+    "integrity_state": "Indeterminate",
+    "admissibility": "Inadmissible",
+    "assertions_passed": true
+}

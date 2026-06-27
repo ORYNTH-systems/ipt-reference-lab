@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-085",
+    "title": "Supply Chain Preservation",
+    "category": "Cross-Domain Validation",
+    "evidence_sufficiency": 0.8,
+    "continuity": 0.75,
+    "degradation": 0.15,
+    "recoverability": 0.7,
+    "integrity_preservation_support": 0.607,
+    "integrity_state": "Stressed",
+    "admissibility": "Admissible",
+    "assertions_passed": true
+}

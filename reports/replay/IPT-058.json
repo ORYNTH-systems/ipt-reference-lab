@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-058",
+    "title": "Indeterminate",
+    "category": "Integrity State Architecture",
+    "evidence_sufficiency": 0.75,
+    "continuity": 0.86,
+    "degradation": 0.35,
+    "recoverability": 0.6,
+    "integrity_preservation_support": 0.553,
+    "integrity_state": "Drifting",
+    "admissibility": "Admissible",
+    "assertions_passed": true
+}

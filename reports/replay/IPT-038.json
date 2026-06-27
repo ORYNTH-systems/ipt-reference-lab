@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-038",
+    "title": "Irreversible Degradation",
+    "category": "Degradation",
+    "evidence_sufficiency": 0.9,
+    "continuity": 0.86,
+    "degradation": 0.65,
+    "recoverability": 0.7,
+    "integrity_preservation_support": 0.55,
+    "integrity_state": "Drifting",
+    "admissibility": "Admissible",
+    "assertions_passed": true
+}

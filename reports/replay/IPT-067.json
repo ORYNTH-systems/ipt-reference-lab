@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-067",
+    "title": "Measurement Bias Detection",
+    "category": "Measurement Architecture",
+    "evidence_sufficiency": 0.7,
+    "continuity": 0.808,
+    "degradation": 0.15,
+    "recoverability": 0.7,
+    "integrity_preservation_support": 0.59,
+    "integrity_state": "Drifting",
+    "admissibility": "Admissible",
+    "assertions_passed": true
+}

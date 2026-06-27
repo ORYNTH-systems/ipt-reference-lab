@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-045",
+    "title": "Recovery with Identity Change",
+    "category": "Recoverability",
+    "evidence_sufficiency": 0.9,
+    "continuity": 0.86,
+    "degradation": 0.15,
+    "recoverability": 0.45,
+    "integrity_preservation_support": 0.625,
+    "integrity_state": "Stressed",
+    "admissibility": "Admissible",
+    "assertions_passed": true
+}

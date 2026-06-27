@@ -1,0 +1,13 @@
+{
+    "case_id": "IPT-093",
+    "title": "IPT vs AOMS Boundary",
+    "category": "Constitutional Boundary Protection",
+    "evidence_sufficiency": 0.85,
+    "continuity": 0.86,
+    "degradation": 0.2,
+    "recoverability": 0.7,
+    "integrity_preservation_support": 0.645,
+    "integrity_state": "Stressed",
+    "admissibility": "Admissible",
+    "assertions_passed": true
+}
