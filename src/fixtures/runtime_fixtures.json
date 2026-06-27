@@ -1,0 +1,3002 @@
+[
+    {
+        "case_id": "IPT-001",
+        "title": "Constitutional Bounded System Definition",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-002",
+        "title": "Evaluative Object Delimitation",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-003",
+        "title": "Boundary Ambiguity Resolution",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-004",
+        "title": "External Dependency Separation",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-005",
+        "title": "Nested Bounded Systems",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-006",
+        "title": "Multi-System Boundary Isolation",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-007",
+        "title": "Dynamic Boundary Evolution",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-008",
+        "title": "Component Membership Validation",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-009",
+        "title": "Boundary Drift Detection",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-010",
+        "title": "Invalid Evaluative Object",
+        "category": "Bounded System Definition",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.25,
+            "continuity": {
+                "structural": 0.25,
+                "functional": 0.25,
+                "behavioral": 0.25,
+                "evidentiary": 0.25,
+                "temporal": 0.25
+            },
+            "degradation": 0.85,
+            "recoverability": 0.2
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-011",
+        "title": "Complete Evidence Availability",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-012",
+        "title": "Partial Evidence Evaluation",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-013",
+        "title": "Missing Critical Evidence",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-014",
+        "title": "Conflicting Evidence Sources",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-015",
+        "title": "Delayed Evidence Arrival",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-016",
+        "title": "Corrupted Evidence",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-017",
+        "title": "Untrusted Evidence Source",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-018",
+        "title": "Insufficient Evidence Threshold",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.45,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-019",
+        "title": "Evidence Recovery",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-020",
+        "title": "Indeterminate Evaluation",
+        "category": "Evidence Sufficiency",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.25,
+            "continuity": {
+                "structural": 0.25,
+                "functional": 0.25,
+                "behavioral": 0.25,
+                "evidentiary": 0.25,
+                "temporal": 0.25
+            },
+            "degradation": 0.85,
+            "recoverability": 0.2
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-021",
+        "title": "Structural Continuity",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-022",
+        "title": "Functional Continuity",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-023",
+        "title": "Evidentiary Continuity",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-024",
+        "title": "Partial Continuity Preservation",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-025",
+        "title": "Hidden Continuity Loss",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-026",
+        "title": "Progressive Continuity Drift",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-027",
+        "title": "Continuity Recovery",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-028",
+        "title": "Continuity Fragmentation",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-029",
+        "title": "Identity Transition Evaluation",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.5,
+                "functional": 0.5,
+                "behavioral": 0.5,
+                "evidentiary": 0.5,
+                "temporal": 0.5
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-030",
+        "title": "Continuity Collapse",
+        "category": "Continuity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.25,
+            "continuity": {
+                "structural": 0.25,
+                "functional": 0.25,
+                "behavioral": 0.25,
+                "evidentiary": 0.25,
+                "temporal": 0.25
+            },
+            "degradation": 0.85,
+            "recoverability": 0.2
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-031",
+        "title": "Localized Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-032",
+        "title": "Progressive Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-033",
+        "title": "Sudden Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-034",
+        "title": "Cascading Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-035",
+        "title": "Hidden Internal Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-036",
+        "title": "External Dependency Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-037",
+        "title": "Compound Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-038",
+        "title": "Irreversible Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-039",
+        "title": "Recoverable Degradation",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.65,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-040",
+        "title": "Critical Preservation Failure",
+        "category": "Degradation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.25,
+            "continuity": {
+                "structural": 0.25,
+                "functional": 0.25,
+                "behavioral": 0.25,
+                "evidentiary": 0.25,
+                "temporal": 0.25
+            },
+            "degradation": 0.85,
+            "recoverability": 0.2
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-041",
+        "title": "Complete Recovery",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-042",
+        "title": "Partial Recovery",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-043",
+        "title": "Recovery with Residual Loss",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-044",
+        "title": "Recovery Without Identity Loss",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-045",
+        "title": "Recovery with Identity Change",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-046",
+        "title": "Failed Recovery",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-047",
+        "title": "Delayed Recovery",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-048",
+        "title": "Multi-Stage Recovery",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-049",
+        "title": "Recovery Under Uncertainty",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.9,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.45
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-050",
+        "title": "Non-Recoverable State",
+        "category": "Recoverability",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.25,
+            "continuity": {
+                "structural": 0.25,
+                "functional": 0.25,
+                "behavioral": 0.25,
+                "evidentiary": 0.25,
+                "temporal": 0.25
+            },
+            "degradation": 0.85,
+            "recoverability": 0.2
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-051",
+        "title": "Preserved",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-052",
+        "title": "Stressed",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-053",
+        "title": "Drifting",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-054",
+        "title": "Degraded",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-055",
+        "title": "Fragmented",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-056",
+        "title": "Functional Collapse",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-057",
+        "title": "Recovering",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-058",
+        "title": "Indeterminate",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-059",
+        "title": "Mixed Integrity State",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-060",
+        "title": "State Transition Validation",
+        "category": "Integrity State Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.35,
+            "recoverability": 0.6
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-061",
+        "title": "Observable Acquisition",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-062",
+        "title": "Derived Indicator Mapping",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-063",
+        "title": "Interpretation Separation",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-064",
+        "title": "Measurement Normalization",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-065",
+        "title": "Observable Drift",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-066",
+        "title": "Measurement Noise",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-067",
+        "title": "Measurement Bias Detection",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-068",
+        "title": "Admissible Transformation",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-069",
+        "title": "Invalid Measurement Chain",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-070",
+        "title": "Measurement Integrity Validation",
+        "category": "Measurement Architecture",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.7,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.6,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-071",
+        "title": "Declared Bounded System",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-072",
+        "title": "Estimator Consistency",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-073",
+        "title": "Weight Configuration Validation",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-074",
+        "title": "Threshold Declaration",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-075",
+        "title": "Calibration Stability",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-076",
+        "title": "Proxy Substitution Detection",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-077",
+        "title": "Implementation Drift",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-078",
+        "title": "Audit Replay Consistency",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-079",
+        "title": "Version Compatibility",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.75,
+            "continuity": {
+                "structural": 0.7,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-080",
+        "title": "Implementation Integrity Failure",
+        "category": "Implementation Fidelity",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.25,
+            "continuity": {
+                "structural": 0.25,
+                "functional": 0.25,
+                "behavioral": 0.25,
+                "evidentiary": 0.25,
+                "temporal": 0.25
+            },
+            "degradation": 0.85,
+            "recoverability": 0.2
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-081",
+        "title": "Healthcare Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-082",
+        "title": "Agentic AI Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-083",
+        "title": "Financial System Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-084",
+        "title": "Infrastructure Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-085",
+        "title": "Supply Chain Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-086",
+        "title": "Digital Identity Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-087",
+        "title": "Autonomous Vehicle Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-088",
+        "title": "Robotic System Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-089",
+        "title": "Distributed Network Preservation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-090",
+        "title": "Cross-Domain Invariance Validation",
+        "category": "Cross-Domain Validation",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.8,
+            "continuity": {
+                "structural": 0.75,
+                "functional": 0.75,
+                "behavioral": 0.75,
+                "evidentiary": 0.75,
+                "temporal": 0.75
+            },
+            "degradation": 0.15,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-091",
+        "title": "IPT vs UAA Boundary",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-092",
+        "title": "IPT vs EIP Boundary",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-093",
+        "title": "IPT vs AOMS Boundary",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-094",
+        "title": "IPT vs POB Boundary",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-095",
+        "title": "Non-Sovereign Evaluation",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-096",
+        "title": "Evaluation Admissibility",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-097",
+        "title": "Preservation vs Performance",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-098",
+        "title": "Preservation vs Reliability",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-099",
+        "title": "Preservation vs Safety",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    },
+    {
+        "case_id": "IPT-100",
+        "title": "Constitutional Integrity Evaluation",
+        "category": "Constitutional Boundary Protection",
+        "bounded_system": {
+            "declared": true,
+            "object": "bounded_evaluative_object"
+        },
+        "observables": {
+            "evidence_sufficiency": 0.85,
+            "continuity": {
+                "structural": 0.86,
+                "functional": 0.86,
+                "behavioral": 0.86,
+                "evidentiary": 0.86,
+                "temporal": 0.86
+            },
+            "degradation": 0.2,
+            "recoverability": 0.7
+        },
+        "assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ]
+    }
+]
