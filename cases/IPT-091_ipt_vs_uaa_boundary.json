@@ -3,35 +3,50 @@
     "title":  "IPT vs UAA Boundary",
     "domain":  "Constitutional Boundary Protection",
     "bounded_system":  {
-
+                           "boundary_rule":  "IPT evaluates preservation integrity; UAA governs execution authority. Neither architecture substitutes for the other.",
+                           "name":  "IPT vs UAA Boundary",
+                           "id":  "CB-091"
                        },
     "preservation_properties":  [
-
+                                    "constitutional_boundary",
+                                    "architectural_separation",
+                                    "non_substitutability"
                                 ],
     "observables":  [
-
+                        "ipt_evaluation_scope",
+                        "uaa_execution_scope",
+                        "boundary_definition"
                     ],
     "evidence_set":  [
-
+                         "ipt_specification",
+                         "uaa_specification",
+                         "boundary_mapping"
                      ],
     "derived_indicators":  [
-
+                               "boundary_preserved",
+                               "architectures_distinct",
+                               "scope_overlap_absent"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "IPT scope is preservation",
+                               "UAA scope is execution governance",
+                               "architectural boundaries remain distinct"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-091",
+                                 "result":  "PASS",
+                                 "constitutional_boundary":  "validated"
                              },
     "expected_metrics_contribution":  {
-
+                                          "constitutional_boundary_cases":  1,
+                                          "preserved_states":  1
                                       }
 }
