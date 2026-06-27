@@ -1,0 +1,37 @@
+﻿{
+    "case_id":  "IPT-065",
+    "title":  "Observable Drift",
+    "domain":  "Measurement Architecture",
+    "bounded_system":  {
+
+                       },
+    "preservation_properties":  [
+
+                                ],
+    "observables":  [
+
+                    ],
+    "evidence_set":  [
+
+                     ],
+    "derived_indicators":  [
+
+                           ],
+    "expected":  {
+                     "evidence_sufficiency":  null,
+                     "continuity":  null,
+                     "degradation":  null,
+                     "recoverability":  null,
+                     "integrity_state":  null,
+                     "admissibility":  null
+                 },
+    "runtime_assertions":  [
+
+                           ],
+    "expected_json_output":  {
+
+                             },
+    "expected_metrics_contribution":  {
+
+                                      }
+}
