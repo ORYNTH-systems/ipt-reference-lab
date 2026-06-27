@@ -3,35 +3,50 @@
     "title":  "Stressed",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A stressed state exists when preservation remains intact under bounded pressure.",
+                           "name":  "Stressed Integrity State",
+                           "id":  "IS-052"
                        },
     "preservation_properties":  [
-
+                                    "bounded_stress",
+                                    "identity_retention",
+                                    "conditional_preservation"
                                 ],
     "observables":  [
-
+                        "stress_indicator",
+                        "continuity_status",
+                        "identity_margin"
                     ],
     "evidence_set":  [
-
+                         "stress_record",
+                         "continuity_record",
+                         "identity_margin_report"
                      ],
     "derived_indicators":  [
-
+                               "stress_detected",
+                               "identity_margin_sufficient",
+                               "collapse_absent"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "localized",
+                     "continuity":  "continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "stress is detected",
+                               "identity margin remains sufficient",
+                               "integrity_state equals stressed"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-052",
+                                 "result":  "PASS",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "conditional_admissibility":  1
                                       }
 }

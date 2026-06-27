@@ -3,35 +3,50 @@
     "title":  "Functional Collapse",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "Functional collapse exists when identity-critical preservation properties fail beyond recovery.",
+                           "name":  "Functional Collapse Integrity State",
+                           "id":  "IS-056"
                        },
     "preservation_properties":  [
-
+                                    "collapse_detection",
+                                    "identity_critical_failure",
+                                    "terminal_state_assignment"
                                 ],
     "observables":  [
-
+                        "critical_property_status",
+                        "recovery_possibility",
+                        "collapse_threshold"
                     ],
     "evidence_set":  [
-
+                         "critical_property_manifest",
+                         "failure_record",
+                         "terminal_classification"
                      ],
     "derived_indicators":  [
-
+                               "critical_property_failed",
+                               "collapse_threshold_crossed",
+                               "non_recoverable"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "non_recoverable",
+                     "degradation":  "critical",
+                     "continuity":  "collapsed",
+                     "integrity_state":  "functional_collapse",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "critical property failure is detected",
+                               "recoverability equals non_recoverable",
+                               "integrity_state equals functional_collapse"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-056",
+                                 "result":  "PASS",
+                                 "integrity_state":  "functional_collapse"
                              },
     "expected_metrics_contribution":  {
-
+                                          "functional_collapse_states":  1,
+                                          "inadmissible_evaluations":  1
                                       }
 }

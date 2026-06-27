@@ -3,35 +3,50 @@
     "title":  "Preserved",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A preserved state exists when continuity and preservation properties remain intact.",
+                           "name":  "Preserved Integrity State",
+                           "id":  "IS-051"
                        },
     "preservation_properties":  [
-
+                                    "state_preservation",
+                                    "continuity_intact",
+                                    "degradation_absent"
                                 ],
     "observables":  [
-
+                        "continuity_status",
+                        "degradation_status",
+                        "property_status"
                     ],
     "evidence_set":  [
-
+                         "continuity_record",
+                         "property_validation",
+                         "degradation_assessment"
                      ],
     "derived_indicators":  [
-
+                               "continuity_continuous",
+                               "no_degradation",
+                               "properties_intact"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "continuity equals continuous",
+                               "degradation equals none",
+                               "integrity_state equals preserved"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-051",
+                                 "result":  "PASS",
+                                 "integrity_state":  "preserved"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "admissible_evaluations":  1
                                       }
 }

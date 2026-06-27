@@ -3,35 +3,50 @@
     "title":  "Recovering",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A recovering state exists when valid restoration is underway but not yet fully preserved.",
+                           "name":  "Recovering Integrity State",
+                           "id":  "IS-057"
                        },
     "preservation_properties":  [
-
+                                    "recovery_in_progress",
+                                    "intermediate_state_validation",
+                                    "restoration_trajectory"
                                 ],
     "observables":  [
-
+                        "degraded_state",
+                        "recovery_stage",
+                        "restoration_progress"
                     ],
     "evidence_set":  [
-
+                         "recovery_log",
+                         "stage_validation",
+                         "progress_report"
                      ],
     "derived_indicators":  [
-
+                               "recovery_active",
+                               "stage_validated",
+                               "full_preservation_not_yet_asserted"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "in_progress",
+                     "degradation":  "resolving",
+                     "continuity":  "recovered",
+                     "integrity_state":  "recovering",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "recovery stage exists",
+                               "stage validation exists",
+                               "integrity_state equals recovering"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-057",
+                                 "result":  "PASS",
+                                 "integrity_state":  "recovering"
                              },
     "expected_metrics_contribution":  {
-
+                                          "conditional_admissibility":  1,
+                                          "recovering_states":  1
                                       }
 }

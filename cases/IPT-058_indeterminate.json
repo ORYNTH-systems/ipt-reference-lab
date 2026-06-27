@@ -3,35 +3,49 @@
     "title":  "Indeterminate",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "An indeterminate state is assigned when evidence cannot support a preservation judgment.",
+                           "name":  "Indeterminate Integrity State",
+                           "id":  "IS-058"
                        },
     "preservation_properties":  [
-
+                                    "indeterminacy_control",
+                                    "non_speculative_state_assignment",
+                                    "evidence_constraint"
                                 ],
     "observables":  [
-
+                        "evidence_gap",
+                        "unsupported_fields",
+                        "blocked_state_claim"
                     ],
     "evidence_set":  [
-
+                         "incomplete_evidence_manifest",
+                         "uncertainty_record"
                      ],
     "derived_indicators":  [
-
+                               "evidence_insufficient",
+                               "state_not_supported",
+                               "indeterminate_required"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "indeterminate",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "insufficient"
                  },
     "runtime_assertions":  [
-
+                               "unsupported state is not assigned",
+                               "integrity_state equals indeterminate",
+                               "admissibility equals inadmissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-058",
+                                 "result":  "PASS",
+                                 "integrity_state":  "indeterminate"
                              },
     "expected_metrics_contribution":  {
-
+                                          "inadmissible_evaluations":  1,
+                                          "indeterminate_cases":  1
                                       }
 }

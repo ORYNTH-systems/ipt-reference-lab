@@ -3,35 +3,50 @@
     "title":  "Mixed Integrity State",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A mixed state exists when different preservation dimensions support different integrity classifications.",
+                           "name":  "Mixed Integrity State",
+                           "id":  "IS-059"
                        },
     "preservation_properties":  [
-
+                                    "multi_dimension_state_mapping",
+                                    "classification_conflict_handling",
+                                    "mixed_state_assignment"
                                 ],
     "observables":  [
-
+                        "structural_state",
+                        "functional_state",
+                        "evidentiary_state"
                     ],
     "evidence_set":  [
-
+                         "dimension_state_record",
+                         "classification_matrix",
+                         "mixed_state_report"
                      ],
     "derived_indicators":  [
-
+                               "state_dimensions_diverge",
+                               "single_state_insufficient",
+                               "mixed_state_required"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "partial",
+                     "degradation":  "identity_change",
+                     "continuity":  "transitioned",
+                     "integrity_state":  "mixed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "dimension states are evaluated separately",
+                               "state divergence is detected",
+                               "integrity_state equals mixed"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-059",
+                                 "result":  "PASS",
+                                 "integrity_state":  "mixed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "mixed_integrity_states":  1,
+                                          "conditional_admissibility":  1
                                       }
 }

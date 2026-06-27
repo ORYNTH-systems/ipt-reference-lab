@@ -3,35 +3,50 @@
     "title":  "Drifting",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A drifting state exists when preservation trends away from baseline without immediate collapse.",
+                           "name":  "Drifting Integrity State",
+                           "id":  "IS-053"
                        },
     "preservation_properties":  [
-
+                                    "drift_detection",
+                                    "trend_tracking",
+                                    "identity_margin_monitoring"
                                 ],
     "observables":  [
-
+                        "baseline_integrity",
+                        "current_integrity",
+                        "drift_rate"
                     ],
     "evidence_set":  [
-
+                         "baseline_record",
+                         "current_record",
+                         "trend_analysis"
                      ],
     "derived_indicators":  [
-
+                               "drift_detected",
+                               "trend_negative",
+                               "identity_margin_reduced"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "progressive",
+                     "continuity":  "drifting",
+                     "integrity_state":  "drifting",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "drift rate is computed",
+                               "progressive degradation is detected",
+                               "integrity_state equals drifting"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-053",
+                                 "result":  "PASS",
+                                 "integrity_state":  "drifting"
                              },
     "expected_metrics_contribution":  {
-
+                                          "progressive_degradation_cases":  1,
+                                          "drifting_states":  1
                                       }
 }

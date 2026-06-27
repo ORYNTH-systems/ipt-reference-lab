@@ -3,35 +3,50 @@
     "title":  "Fragmented",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A fragmented state exists when continuity traces cannot support a unified integrity judgment.",
+                           "name":  "Fragmented Integrity State",
+                           "id":  "IS-055"
                        },
     "preservation_properties":  [
-
+                                    "fragment_detection",
+                                    "trace_divergence",
+                                    "identity_unification_failure"
                                 ],
     "observables":  [
-
+                        "trace_a",
+                        "trace_b",
+                        "unification_result"
                     ],
     "evidence_set":  [
-
+                         "fragmented_trace_record",
+                         "unification_attempt",
+                         "failure_report"
                      ],
     "derived_indicators":  [
-
+                               "multiple_traces_present",
+                               "unification_failed",
+                               "identity_fragmented"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "compound",
+                     "continuity":  "fragmented",
+                     "integrity_state":  "fragmented",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "multiple traces exist",
+                               "unification fails",
+                               "integrity_state equals fragmented"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-055",
+                                 "result":  "PASS",
+                                 "integrity_state":  "fragmented"
                              },
     "expected_metrics_contribution":  {
-
+                                          "fragmented_states":  1,
+                                          "inadmissible_evaluations":  1
                                       }
 }

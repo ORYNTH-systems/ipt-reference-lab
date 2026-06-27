@@ -3,35 +3,50 @@
     "title":  "Degraded",
     "domain":  "Integrity State Architecture",
     "bounded_system":  {
-
+                           "boundary_rule":  "A degraded state exists when preservation loss exceeds stress tolerance but remains classifiable.",
+                           "name":  "Degraded Integrity State",
+                           "id":  "IS-054"
                        },
     "preservation_properties":  [
-
+                                    "degradation_classification",
+                                    "preservation_loss_detection",
+                                    "state_assignment"
                                 ],
     "observables":  [
-
+                        "property_loss",
+                        "degradation_score",
+                        "remaining_identity_margin"
                     ],
     "evidence_set":  [
-
+                         "loss_record",
+                         "degradation_assessment",
+                         "identity_margin_report"
                      ],
     "derived_indicators":  [
-
+                               "degradation_present",
+                               "stress_threshold_exceeded",
+                               "identity_not_collapsed"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "degraded",
+                     "continuity":  "stressed",
+                     "integrity_state":  "degraded",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "degradation exceeds stress threshold",
+                               "identity has not collapsed",
+                               "integrity_state equals degraded"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-054",
+                                 "result":  "PASS",
+                                 "integrity_state":  "degraded"
                              },
     "expected_metrics_contribution":  {
-
+                                          "degraded_states":  1,
+                                          "conditional_admissibility":  1
                                       }
 }
