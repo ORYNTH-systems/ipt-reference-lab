@@ -3,35 +3,50 @@
     "title":  "Healthcare Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Healthcare implementations shall preserve constitutional integrity independent of domain-specific workflows.",
+                           "name":  "Healthcare Preservation",
+                           "id":  "CD-081"
                        },
     "preservation_properties":  [
-
+                                    "cross_domain_invariance",
+                                    "healthcare_preservation",
+                                    "constitutional_consistency"
                                 ],
     "observables":  [
-
+                        "clinical_state",
+                        "preservation_state",
+                        "evaluation_trace"
                     ],
     "evidence_set":  [
-
+                         "clinical_record",
+                         "preservation_evidence",
+                         "runtime_log"
                      ],
     "derived_indicators":  [
-
+                               "constitutional_rules_preserved",
+                               "domain_specific_data_present",
+                               "evaluation_admissible"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "constitutional rules are unchanged",
+                               "healthcare data remains domain-specific",
+                               "evaluation remains admissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-081",
+                                 "result":  "PASS",
+                                 "domain":  "healthcare"
                              },
     "expected_metrics_contribution":  {
-
+                                          "healthcare_validation_cases":  1,
+                                          "cross_domain_cases":  1
                                       }
 }
