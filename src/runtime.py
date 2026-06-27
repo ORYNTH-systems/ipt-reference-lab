@@ -1,36 +1,39 @@
 ﻿import json
 from pathlib import Path
 
-from models import IPTCase
 from evaluator import IPTEvaluator
+from models import RuntimeFixture
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFINITIONS = ROOT / "src" / "case_definitions.json"
+FIXTURES = ROOT / "src" / "fixtures" / "runtime_fixtures.json"
 
 
-def load_cases():
-    definitions = json.loads(DEFINITIONS.read_text(encoding="utf-8-sig"))
-    cases = []
-
-    for group in definitions:
-        category = group["category"]
-        for case_id, title in group["cases"]:
-            cases.append(IPTCase(case_id=case_id, title=title, category=category))
-
-    return cases
+def load_fixtures():
+    raw = json.loads(FIXTURES.read_text(encoding="utf-8-sig"))
+    return [
+        RuntimeFixture(
+            case_id=item["case_id"],
+            title=item["title"],
+            category=item["category"],
+            bounded_system=item["bounded_system"],
+            observables=item["observables"],
+            assertions=item["assertions"],
+        )
+        for item in raw
+    ]
 
 
 def run_all():
     evaluator = IPTEvaluator()
-    return [evaluator.evaluate(case) for case in load_cases()]
+    return [evaluator.evaluate(fixture) for fixture in load_fixtures()]
 
 
 def run_case(case_id: str):
     evaluator = IPTEvaluator()
 
-    for case in load_cases():
-        if case.case_id == case_id:
-            return evaluator.evaluate(case)
+    for fixture in load_fixtures():
+        if fixture.case_id == case_id:
+            return evaluator.evaluate(fixture)
 
     raise ValueError(f"Unknown case_id: {case_id}")

@@ -1,6 +1,6 @@
 ﻿from dataclasses import dataclass, asdict
 from enum import Enum
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 
 class IntegrityState(str, Enum):
@@ -21,10 +21,35 @@ class Admissibility(str, Enum):
 
 
 @dataclass
-class IPTCase:
+class ContinuityVector:
+    structural: float
+    functional: float
+    behavioral: float
+    evidentiary: float
+    temporal: float
+
+    def average(self) -> float:
+        return round(
+            (
+                self.structural
+                + self.functional
+                + self.behavioral
+                + self.evidentiary
+                + self.temporal
+            )
+            / 5,
+            3,
+        )
+
+
+@dataclass
+class RuntimeFixture:
     case_id: str
     title: str
     category: str
+    bounded_system: Dict
+    observables: Dict
+    assertions: List[str]
 
 
 @dataclass
