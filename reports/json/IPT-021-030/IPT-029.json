@@ -1,0 +1,19 @@
+{
+    "schema_version": "1.0",
+    "case_id": "IPT-029",
+    "title": "Reserved Case 029",
+    "category": "Continuity",
+    "bounded_system": null,
+    "observables": [],
+    "evidence": [],
+    "derived_indicators": [],
+    "evidence_sufficiency": null,
+    "continuity": null,
+    "degradation": null,
+    "recoverability": null,
+    "integrity_preservation_support": null,
+    "integrity_state": null,
+    "admissibility": null,
+    "runtime_assertions": [],
+    "metrics": []
+}
