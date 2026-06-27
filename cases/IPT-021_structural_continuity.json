@@ -3,35 +3,52 @@
     "title":  "Structural Continuity",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Structural continuity exists when core components remain identifiable across observations.",
+                           "name":  "Structural Continuity System",
+                           "id":  "CT-021"
                        },
     "preservation_properties":  [
-
+                                    "structural_persistence",
+                                    "component_identity",
+                                    "configuration_stability"
                                 ],
     "observables":  [
-
+                        "baseline_structure",
+                        "current_structure",
+                        "component_map"
                     ],
     "evidence_set":  [
-
+                         "baseline_manifest",
+                         "current_manifest",
+                         "structure_comparison"
                      ],
     "derived_indicators":  [
-
+                               "core_components_preserved",
+                               "structure_match_above_threshold",
+                               "identity_continuous"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "baseline structure exists",
+                               "current structure exists",
+                               "core components remain identifiable"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-021",
+                                 "result":  "PASS",
+                                 "continuity":  "continuous",
+                                 "integrity_state":  "preserved"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "continuity_cases":  1,
+                                          "structural_continuity":  1
                                       }
 }

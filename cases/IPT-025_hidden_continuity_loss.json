@@ -3,35 +3,52 @@
     "title":  "Hidden Continuity Loss",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Hidden continuity loss must be detected before preserved identity is asserted.",
+                           "name":  "Hidden Continuity Loss System",
+                           "id":  "CT-025"
                        },
     "preservation_properties":  [
-
+                                    "hidden_loss_detection",
+                                    "identity_claim_validation",
+                                    "continuity_integrity"
                                 ],
     "observables":  [
-
+                        "surface_state",
+                        "internal_state",
+                        "continuity_probe"
                     ],
     "evidence_set":  [
-
+                         "surface_manifest",
+                         "internal_diagnostic",
+                         "continuity_test"
                      ],
     "derived_indicators":  [
-
+                               "surface_continuity_claimed",
+                               "internal_continuity_failed",
+                               "hidden_loss_detected"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "hidden_internal",
+                     "continuity":  "collapsed",
+                     "integrity_state":  "fragmented",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "surface and internal states are compared",
+                               "hidden loss is detected",
+                               "preserved identity is not asserted"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-025",
+                                 "hidden_loss":  "detected",
+                                 "result":  "PASS",
+                                 "continuity":  "collapsed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "fragmented_states":  1,
+                                          "inadmissible_evaluations":  1,
+                                          "hidden_continuity_loss":  1
                                       }
 }

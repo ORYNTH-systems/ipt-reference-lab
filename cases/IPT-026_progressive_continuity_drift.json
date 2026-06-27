@@ -3,35 +3,52 @@
     "title":  "Progressive Continuity Drift",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Progressive drift must be tracked across intervals before identity collapse occurs.",
+                           "name":  "Progressive Continuity Drift System",
+                           "id":  "CT-026"
                        },
     "preservation_properties":  [
-
+                                    "continuity_drift_tracking",
+                                    "progressive_change_detection",
+                                    "identity_margin_monitoring"
                                 ],
     "observables":  [
-
+                        "continuity_score_t1",
+                        "continuity_score_t2",
+                        "continuity_score_t3",
+                        "drift_rate"
                     ],
     "evidence_set":  [
-
+                         "temporal_observation_log",
+                         "continuity_series",
+                         "drift_analysis"
                      ],
     "derived_indicators":  [
-
+                               "drift_detected",
+                               "drift_progressive",
+                               "identity_margin_reduced"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "progressive",
+                     "continuity":  "drifting",
+                     "integrity_state":  "drifting",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "multiple continuity observations exist",
+                               "drift rate is computed",
+                               "integrity_state equals drifting"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-026",
+                                 "result":  "PASS",
+                                 "continuity":  "drifting",
+                                 "degradation":  "progressive"
                              },
     "expected_metrics_contribution":  {
-
+                                          "continuity_drift_cases":  1,
+                                          "drifting_states":  1
                                       }
 }

@@ -3,35 +3,51 @@
     "title":  "Identity Transition Evaluation",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Identity transition must be evaluated as transition, not assumed continuity.",
+                           "name":  "Identity Transition System",
+                           "id":  "CT-029"
                        },
     "preservation_properties":  [
-
+                                    "identity_transition_detection",
+                                    "continuity_vs_replacement_separation",
+                                    "transition_admissibility"
                                 ],
     "observables":  [
-
+                        "prior_identity",
+                        "current_identity",
+                        "transition_record"
                     ],
     "evidence_set":  [
-
+                         "identity_record_t1",
+                         "identity_record_t2",
+                         "transition_evidence"
                      ],
     "derived_indicators":  [
-
+                               "identity_transition_detected",
+                               "continuity_not_assumed",
+                               "transition_classified"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_applicable",
+                     "degradation":  "identity_change",
+                     "continuity":  "transitioned",
+                     "integrity_state":  "mixed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "prior identity exists",
+                               "current identity exists",
+                               "transition is classified separately from continuity"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-029",
+                                 "result":  "PASS",
+                                 "continuity":  "transitioned",
+                                 "integrity_state":  "mixed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "mixed_integrity_states":  1,
+                                          "identity_transition_cases":  1
                                       }
 }

@@ -3,35 +3,52 @@
     "title":  "Continuity Recovery",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Continuity may be restored when identity-critical properties are recovered with valid evidence.",
+                           "name":  "Continuity Recovery System",
+                           "id":  "CT-027"
                        },
     "preservation_properties":  [
-
+                                    "continuity_restoration",
+                                    "identity_property_recovery",
+                                    "evidence_supported_recovery"
                                 ],
     "observables":  [
-
+                        "pre_loss_state",
+                        "loss_state",
+                        "recovered_state",
+                        "recovery_evidence"
                     ],
     "evidence_set":  [
-
+                         "loss_record",
+                         "recovery_log",
+                         "post_recovery_validation"
                      ],
     "derived_indicators":  [
-
+                               "continuity_lost",
+                               "continuity_restored",
+                               "identity_properties_recovered"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "complete",
+                     "degradation":  "resolved",
+                     "continuity":  "recovered",
+                     "integrity_state":  "recovering",
+                     "admissibility":  "admissible_after_recovery",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "loss state is recorded",
+                               "recovery evidence exists",
+                               "continuity is restored through validation"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-027",
+                                 "result":  "PASS",
+                                 "continuity":  "recovered",
+                                 "recoverability":  "complete"
                              },
     "expected_metrics_contribution":  {
-
+                                          "continuity_recovery_cases":  1,
+                                          "recovering_states":  1
                                       }
 }

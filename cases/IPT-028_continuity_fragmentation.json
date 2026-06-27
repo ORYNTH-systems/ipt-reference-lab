@@ -3,35 +3,52 @@
     "title":  "Continuity Fragmentation",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Fragmented continuity exists when separable continuity traces cannot support a unified identity judgment.",
+                           "name":  "Continuity Fragmentation System",
+                           "id":  "CT-028"
                        },
     "preservation_properties":  [
-
+                                    "fragment_detection",
+                                    "identity_unification_failure",
+                                    "trace_separation"
                                 ],
     "observables":  [
-
+                        "trace_a",
+                        "trace_b",
+                        "trace_c",
+                        "unification_result"
                     ],
     "evidence_set":  [
-
+                         "fragmented_trace_log",
+                         "identity_mapping_attempt",
+                         "unification_failure_record"
                      ],
     "derived_indicators":  [
-
+                               "multiple_traces_detected",
+                               "unification_failed",
+                               "identity_fragmented"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "compound",
+                     "continuity":  "fragmented",
+                     "integrity_state":  "fragmented",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "multiple continuity traces exist",
+                               "unification attempt is recorded",
+                               "fragmented state is assigned"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-028",
+                                 "result":  "PASS",
+                                 "continuity":  "fragmented",
+                                 "integrity_state":  "fragmented"
                              },
     "expected_metrics_contribution":  {
-
+                                          "fragmented_states":  1,
+                                          "fragmented_continuity_cases":  1
                                       }
 }

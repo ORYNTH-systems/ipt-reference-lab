@@ -3,35 +3,50 @@
     "title":  "Evidentiary Continuity",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Evidentiary continuity exists when evidence remains traceable across evaluation intervals.",
+                           "name":  "Evidentiary Continuity System",
+                           "id":  "CT-023"
                        },
     "preservation_properties":  [
-
+                                    "evidence_chain_persistence",
+                                    "source_traceability",
+                                    "temporal_evidence_integrity"
                                 ],
     "observables":  [
-
+                        "prior_evidence_chain",
+                        "current_evidence_chain",
+                        "source_links"
                     ],
     "evidence_set":  [
-
+                         "evidence_log_t1",
+                         "evidence_log_t2",
+                         "provenance_record"
                      ],
     "derived_indicators":  [
-
+                               "evidence_chain_unbroken",
+                               "sources_traceable",
+                               "temporal_gap_absent"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "prior evidence chain exists",
+                               "current evidence chain exists",
+                               "provenance is unbroken"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-023",
+                                 "evidentiary_continuity":  "continuous",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "evidentiary_continuity":  1
                                       }
 }

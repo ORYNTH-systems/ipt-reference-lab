@@ -3,35 +3,51 @@
     "title":  "Partial Continuity Preservation",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Partial continuity may preserve identity when core preservation properties remain intact.",
+                           "name":  "Partial Continuity System",
+                           "id":  "CT-024"
                        },
     "preservation_properties":  [
-
+                                    "partial_continuity",
+                                    "core_property_retention",
+                                    "limited_identity_preservation"
                                 ],
     "observables":  [
-
+                        "preserved_components",
+                        "lost_components",
+                        "core_property_status"
                     ],
     "evidence_set":  [
-
+                         "component_delta",
+                         "continuity_assessment",
+                         "core_property_record"
                      ],
     "derived_indicators":  [
-
+                               "partial_loss_detected",
+                               "core_properties_preserved",
+                               "identity_conditionally_continuous"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "localized",
+                     "continuity":  "partially_continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "partial loss is detected",
+                               "core properties remain intact",
+                               "conditional admissibility is applied"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-024",
+                                 "result":  "PASS",
+                                 "continuity":  "partially_continuous",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "partial_continuity_cases":  1
                                       }
 }

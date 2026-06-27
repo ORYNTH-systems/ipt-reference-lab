@@ -3,35 +3,52 @@
     "title":  "Continuity Collapse",
     "domain":  "Continuity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Continuity collapse occurs when identity-critical properties can no longer be preserved or reconstructed.",
+                           "name":  "Continuity Collapse System",
+                           "id":  "CT-030"
                        },
     "preservation_properties":  [
-
+                                    "collapse_detection",
+                                    "identity_failure_classification",
+                                    "preservation_judgment_control"
                                 ],
     "observables":  [
-
+                        "identity_critical_properties",
+                        "current_property_status",
+                        "reconstruction_attempt"
                     ],
     "evidence_set":  [
-
+                         "identity_property_manifest",
+                         "failure_record",
+                         "reconstruction_failure_report"
                      ],
     "derived_indicators":  [
-
+                               "identity_properties_failed",
+                               "reconstruction_failed",
+                               "continuity_collapsed"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "non_recoverable",
+                     "degradation":  "critical",
+                     "continuity":  "collapsed",
+                     "integrity_state":  "functional_collapse",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "identity-critical properties are evaluated",
+                               "reconstruction failure is recorded",
+                               "continuity equals collapsed"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-030",
+                                 "result":  "PASS",
+                                 "continuity":  "collapsed",
+                                 "integrity_state":  "functional_collapse"
                              },
     "expected_metrics_contribution":  {
-
+                                          "continuity_collapse_cases":  1,
+                                          "inadmissible_evaluations":  1,
+                                          "functional_collapse_states":  1
                                       }
 }
