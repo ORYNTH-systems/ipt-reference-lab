@@ -3,35 +3,50 @@
     "title":  "Weight Configuration Validation",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Implementation weights must match declared constitutional weighting rules.",
+                           "name":  "Weight Configuration Validation",
+                           "id":  "IF-073"
                        },
     "preservation_properties":  [
-
+                                    "weight_configuration_validity",
+                                    "parameter_traceability",
+                                    "configuration_control"
                                 ],
     "observables":  [
-
+                        "declared_weights",
+                        "implemented_weights",
+                        "configuration_hash"
                     ],
     "evidence_set":  [
-
+                         "weight_specification",
+                         "implementation_config",
+                         "configuration_validation"
                      ],
     "derived_indicators":  [
-
+                               "weights_match",
+                               "configuration_traceable",
+                               "parameter_integrity_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "declared weights exist",
+                               "implemented weights match declaration",
+                               "configuration hash is valid"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-073",
+                                 "result":  "PASS",
+                                 "weights":  "valid"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "weight_configuration_validations":  1
                                       }
 }

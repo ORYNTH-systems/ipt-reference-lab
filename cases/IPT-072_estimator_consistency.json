@@ -3,35 +3,50 @@
     "title":  "Estimator Consistency",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Estimator outputs must remain consistent with declared preservation semantics.",
+                           "name":  "Estimator Consistency",
+                           "id":  "IF-072"
                        },
     "preservation_properties":  [
-
+                                    "estimator_consistency",
+                                    "semantic_alignment",
+                                    "output_stability"
                                 ],
     "observables":  [
-
+                        "estimator_output",
+                        "expected_output",
+                        "semantic_rule"
                     ],
     "evidence_set":  [
-
+                         "estimator_log",
+                         "expected_result_record",
+                         "semantic_mapping"
                      ],
     "derived_indicators":  [
-
+                               "output_matches_expected",
+                               "semantic_alignment_valid",
+                               "estimator_consistent"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "estimator output exists",
+                               "expected output exists",
+                               "estimator remains semantically aligned"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-072",
+                                 "result":  "PASS",
+                                 "estimator":  "consistent"
                              },
     "expected_metrics_contribution":  {
-
+                                          "admissible_evaluations":  1,
+                                          "estimator_consistency_cases":  1
                                       }
 }

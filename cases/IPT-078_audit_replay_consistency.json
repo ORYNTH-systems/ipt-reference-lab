@@ -3,35 +3,50 @@
     "title":  "Audit Replay Consistency",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Audit replay must reproduce the original integrity judgment from recorded evidence.",
+                           "name":  "Audit Replay Consistency",
+                           "id":  "IF-078"
                        },
     "preservation_properties":  [
-
+                                    "audit_replay",
+                                    "reproducibility",
+                                    "evidence_trace_integrity"
                                 ],
     "observables":  [
-
+                        "original_result",
+                        "replay_result",
+                        "replay_trace"
                     ],
     "evidence_set":  [
-
+                         "original_evidence_bundle",
+                         "replay_log",
+                         "comparison_report"
                      ],
     "derived_indicators":  [
-
+                               "replay_matches_original",
+                               "evidence_trace_reproducible",
+                               "audit_consistent"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "original result exists",
+                               "replay result exists",
+                               "replay matches original judgment"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-078",
+                                 "result":  "PASS",
+                                 "audit_replay":  "consistent"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "audit_replay_cases":  1
                                       }
 }

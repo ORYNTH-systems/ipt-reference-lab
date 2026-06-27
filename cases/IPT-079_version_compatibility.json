@@ -3,35 +3,50 @@
     "title":  "Version Compatibility",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Implementation versions must remain compatible with the declared proof schema and constitutional domain.",
+                           "name":  "Version Compatibility",
+                           "id":  "IF-079"
                        },
     "preservation_properties":  [
-
+                                    "version_compatibility",
+                                    "schema_alignment",
+                                    "domain_compatibility"
                                 ],
     "observables":  [
-
+                        "case_schema_version",
+                        "tool_version",
+                        "definition_version"
                     ],
     "evidence_set":  [
-
+                         "schema_record",
+                         "tool_version_record",
+                         "definition_metadata"
                      ],
     "derived_indicators":  [
-
+                               "schema_compatible",
+                               "tool_compatible",
+                               "definition_compatible"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "schema version exists",
+                               "tool version exists",
+                               "definition version is compatible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-079",
+                                 "result":  "PASS",
+                                 "version_compatibility":  "valid"
                              },
     "expected_metrics_contribution":  {
-
+                                          "admissible_evaluations":  1,
+                                          "version_compatibility_cases":  1
                                       }
 }

@@ -3,35 +3,50 @@
     "title":  "Threshold Declaration",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Thresholds must be explicitly declared before evaluation.",
+                           "name":  "Threshold Declaration",
+                           "id":  "IF-074"
                        },
     "preservation_properties":  [
-
+                                    "threshold_declaration",
+                                    "evaluation_parameter_admissibility",
+                                    "precommitment"
                                 ],
     "observables":  [
-
+                        "declared_threshold",
+                        "evaluation_result",
+                        "threshold_version"
                     ],
     "evidence_set":  [
-
+                         "threshold_specification",
+                         "version_record",
+                         "evaluation_trace"
                      ],
     "derived_indicators":  [
-
+                               "threshold_declared",
+                               "threshold_applied",
+                               "threshold_version_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "threshold exists before evaluation",
+                               "threshold version exists",
+                               "evaluation uses declared threshold"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-074",
+                                 "result":  "PASS",
+                                 "threshold":  "declared"
                              },
     "expected_metrics_contribution":  {
-
+                                          "admissible_evaluations":  1,
+                                          "threshold_declaration_cases":  1
                                       }
 }

@@ -3,35 +3,50 @@
     "title":  "Proxy Substitution Detection",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Proxy substitutions must be detected when implemented measurements diverge from declared observables.",
+                           "name":  "Proxy Substitution Detection",
+                           "id":  "IF-076"
                        },
     "preservation_properties":  [
-
+                                    "proxy_substitution_detection",
+                                    "observable_fidelity",
+                                    "implementation_transparency"
                                 ],
     "observables":  [
-
+                        "declared_observable",
+                        "implemented_proxy",
+                        "substitution_record"
                     ],
     "evidence_set":  [
-
+                         "observable_specification",
+                         "implementation_mapping",
+                         "proxy_detection_report"
                      ],
     "derived_indicators":  [
-
+                               "proxy_substitution_detected",
+                               "observable_mismatch",
+                               "admissibility_restricted"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "conditionally_admissible",
+                     "recoverability":  "recoverable",
+                     "degradation":  "implementation_drift",
+                     "integrity_state":  "stressed",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "stressed"
                  },
     "runtime_assertions":  [
-
+                               "declared observable exists",
+                               "implemented proxy is detected",
+                               "proxy substitution is not treated as equivalent"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-076",
+                                 "result":  "PASS",
+                                 "proxy_substitution":  "detected"
                              },
     "expected_metrics_contribution":  {
-
+                                          "proxy_substitution_cases":  1,
+                                          "conditional_admissibility":  1
                                       }
 }

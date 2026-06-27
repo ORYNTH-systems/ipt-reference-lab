@@ -3,35 +3,50 @@
     "title":  "Implementation Drift",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Implementation drift must be detected when runtime behavior diverges from declared specification.",
+                           "name":  "Implementation Drift",
+                           "id":  "IF-077"
                        },
     "preservation_properties":  [
-
+                                    "implementation_drift_detection",
+                                    "spec_runtime_alignment",
+                                    "drift_classification"
                                 ],
     "observables":  [
-
+                        "declared_behavior",
+                        "runtime_behavior",
+                        "behavior_delta"
                     ],
     "evidence_set":  [
-
+                         "implementation_specification",
+                         "runtime_trace",
+                         "drift_report"
                      ],
     "derived_indicators":  [
-
+                               "runtime_divergence_detected",
+                               "behavior_delta_computed",
+                               "implementation_drift_classified"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "conditionally_admissible",
+                     "recoverability":  "recoverable",
+                     "degradation":  "implementation_drift",
+                     "integrity_state":  "drifting",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "drifting"
                  },
     "runtime_assertions":  [
-
+                               "declared behavior exists",
+                               "runtime behavior is measured",
+                               "behavior delta is computed"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-077",
+                                 "result":  "PASS",
+                                 "implementation_drift":  "detected"
                              },
     "expected_metrics_contribution":  {
-
+                                          "drifting_states":  1,
+                                          "implementation_drift_cases":  1
                                       }
 }

@@ -3,35 +3,51 @@
     "title":  "Implementation Integrity Failure",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Implementation integrity failure blocks admissible evaluation when the implementation cannot faithfully execute the specification.",
+                           "name":  "Implementation Integrity Failure",
+                           "id":  "IF-080"
                        },
     "preservation_properties":  [
-
+                                    "implementation_failure_detection",
+                                    "fidelity_failure_classification",
+                                    "admissibility_blocking"
                                 ],
     "observables":  [
-
+                        "implementation_error",
+                        "failed_assertion",
+                        "blocked_evaluation"
                     ],
     "evidence_set":  [
-
+                         "error_log",
+                         "assertion_failure_report",
+                         "blocked_execution_record"
                      ],
     "derived_indicators":  [
-
+                               "implementation_failed",
+                               "fidelity_not_preserved",
+                               "evaluation_blocked"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "inadmissible",
+                     "recoverability":  "recoverable_if_corrected",
+                     "degradation":  "implementation_failure",
+                     "integrity_state":  "indeterminate",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "indeterminate"
                  },
     "runtime_assertions":  [
-
+                               "implementation failure is detected",
+                               "failed assertion is recorded",
+                               "admissibility equals inadmissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-080",
+                                 "admissibility":  "inadmissible",
+                                 "result":  "PASS",
+                                 "implementation_integrity":  "failed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "inadmissible_evaluations":  1,
+                                          "implementation_integrity_failures":  1
                                       }
 }

@@ -3,35 +3,50 @@
     "title":  "Calibration Stability",
     "domain":  "Implementation Fidelity",
     "bounded_system":  {
-
+                           "boundary_rule":  "Calibration must remain stable or be versioned before preservation judgments are issued.",
+                           "name":  "Calibration Stability",
+                           "id":  "IF-075"
                        },
     "preservation_properties":  [
-
+                                    "calibration_stability",
+                                    "versioned_calibration",
+                                    "evaluation_reproducibility"
                                 ],
     "observables":  [
-
+                        "calibration_baseline",
+                        "current_calibration",
+                        "calibration_delta"
                     ],
     "evidence_set":  [
-
+                         "calibration_record",
+                         "current_config",
+                         "delta_report"
                      ],
     "derived_indicators":  [
-
+                               "calibration_stable",
+                               "delta_within_tolerance",
+                               "reproducibility_preserved"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "calibration baseline exists",
+                               "current calibration exists",
+                               "calibration delta is within tolerance"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-075",
+                                 "calibration":  "stable",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "calibration_stability_cases":  1,
+                                          "preserved_states":  1
                                       }
 }
