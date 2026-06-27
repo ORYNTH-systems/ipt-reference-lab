@@ -3,35 +3,50 @@
     "title":  "Cross-Domain Invariance Validation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "IPT constitutional rules shall remain invariant across domain mappings.",
+                           "name":  "Cross-Domain Invariance Validation",
+                           "id":  "CD-090"
                        },
     "preservation_properties":  [
-
+                                    "cross_domain_invariance",
+                                    "constitutional_rule_stability",
+                                    "domain_independence"
                                 ],
     "observables":  [
-
+                        "domain_mapping_set",
+                        "constitutional_rule_set",
+                        "invariance_result"
                     ],
     "evidence_set":  [
-
+                         "domain_case_matrix",
+                         "rule_comparison",
+                         "invariance_report"
                      ],
     "derived_indicators":  [
-
+                               "rules_unchanged_across_domains",
+                               "domain_terms_mapped_without_redefinition",
+                               "invariance_validated"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "constitutional rules are stable across domains",
+                               "domain-specific terms do not redefine IPT",
+                               "cross-domain invariance is validated"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-090",
+                                 "result":  "PASS",
+                                 "cross_domain_invariance":  "validated"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "cross_domain_invariance_cases":  1
                                       }
 }

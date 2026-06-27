@@ -3,35 +3,50 @@
     "title":  "Robotic System Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Robotic system preservation shall evaluate embodiment, control, and evidence continuity as distinct preservation dimensions.",
+                           "name":  "Robotic System Preservation",
+                           "id":  "CD-088"
                        },
     "preservation_properties":  [
-
+                                    "robotic_system_preservation",
+                                    "embodiment_continuity",
+                                    "control_integrity"
                                 ],
     "observables":  [
-
+                        "embodiment_state",
+                        "control_state",
+                        "sensor_evidence"
                     ],
     "evidence_set":  [
-
+                         "robot_runtime_log",
+                         "control_trace",
+                         "sensor_record"
                      ],
     "derived_indicators":  [
-
+                               "embodiment_continuous",
+                               "control_integrity_preserved",
+                               "evidence_continuity_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "embodiment state is evaluated",
+                               "control state is evaluated",
+                               "evidence continuity is validated"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-088",
+                                 "result":  "PASS",
+                                 "domain":  "robotic_system"
                              },
     "expected_metrics_contribution":  {
-
+                                          "robotic_system_validation_cases":  1,
+                                          "preserved_states":  1
                                       }
 }

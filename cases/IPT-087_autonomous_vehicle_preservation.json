@@ -3,35 +3,50 @@
     "title":  "Autonomous Vehicle Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Autonomous vehicle preservation shall evaluate system integrity separately from route completion or task success.",
+                           "name":  "Autonomous Vehicle Preservation",
+                           "id":  "CD-087"
                        },
     "preservation_properties":  [
-
+                                    "autonomous_vehicle_preservation",
+                                    "task_preservation_separation",
+                                    "runtime_integrity"
                                 ],
     "observables":  [
-
+                        "vehicle_state",
+                        "sensor_integrity",
+                        "route_execution_status"
                     ],
     "evidence_set":  [
-
+                         "vehicle_runtime_log",
+                         "sensor_validation",
+                         "route_record"
                      ],
     "derived_indicators":  [
-
+                               "vehicle_domain_mapped",
+                               "sensor_integrity_validated",
+                               "route_success_not_substituted_for_preservation"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "vehicle system is bounded",
+                               "sensor integrity is validated",
+                               "route completion is not treated as integrity preservation"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-087",
+                                 "result":  "PASS",
+                                 "domain":  "autonomous_vehicle"
                              },
     "expected_metrics_contribution":  {
-
+                                          "autonomous_vehicle_validation_cases":  1,
+                                          "preserved_states":  1
                                       }
 }

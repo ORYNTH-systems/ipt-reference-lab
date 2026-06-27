@@ -3,35 +3,50 @@
     "title":  "Agentic AI Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Agentic AI implementations shall preserve IPT evaluation independently from agent task execution.",
+                           "name":  "Agentic AI Preservation",
+                           "id":  "CD-082"
                        },
     "preservation_properties":  [
-
+                                    "agentic_ai_preservation",
+                                    "cross_domain_invariance",
+                                    "evaluation_execution_separation"
                                 ],
     "observables":  [
-
+                        "agent_state",
+                        "task_context",
+                        "preservation_trace"
                     ],
     "evidence_set":  [
-
+                         "agent_runtime_log",
+                         "task_record",
+                         "integrity_evaluation_record"
                      ],
     "derived_indicators":  [
-
+                               "agent_domain_mapped",
+                               "preservation_rules_unchanged",
+                               "execution_not_substituted_for_preservation"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "agentic AI domain is mapped",
+                               "IPT rules remain unchanged",
+                               "task success is not treated as preservation"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-082",
+                                 "result":  "PASS",
+                                 "domain":  "agentic_ai"
                              },
     "expected_metrics_contribution":  {
-
+                                          "cross_domain_cases":  1,
+                                          "agentic_ai_validation_cases":  1
                                       }
 }

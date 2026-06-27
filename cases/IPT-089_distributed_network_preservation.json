@@ -3,35 +3,51 @@
     "title":  "Distributed Network Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Distributed network preservation shall evaluate network continuity without collapsing node-level and system-level integrity.",
+                           "name":  "Distributed Network Preservation",
+                           "id":  "CD-089"
                        },
     "preservation_properties":  [
-
+                                    "distributed_network_preservation",
+                                    "node_system_separation",
+                                    "network_continuity"
                                 ],
     "observables":  [
-
+                        "node_state",
+                        "network_topology",
+                        "system_integrity_state"
                     ],
     "evidence_set":  [
-
+                         "node_registry",
+                         "topology_record",
+                         "network_integrity_trace"
                      ],
     "derived_indicators":  [
-
+                               "node_states_mapped",
+                               "system_level_continuity_evaluated",
+                               "node_failure_not_overgeneralized"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "conditionally_admissible",
+                     "recoverability":  "recoverable",
+                     "degradation":  "localized",
+                     "integrity_state":  "stressed",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "partially_continuous"
                  },
     "runtime_assertions":  [
-
+                               "node-level state is separated from network-level state",
+                               "localized node failure is not treated as total collapse",
+                               "network continuity is classified"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-089",
+                                 "result":  "PASS",
+                                 "domain":  "distributed_network",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "distributed_network_validation_cases":  1
                                       }
 }

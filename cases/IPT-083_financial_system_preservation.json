@@ -3,35 +3,50 @@
     "title":  "Financial System Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Financial systems shall map domain events to IPT preservation states without redefining constitutional integrity.",
+                           "name":  "Financial System Preservation",
+                           "id":  "CD-083"
                        },
     "preservation_properties":  [
-
+                                    "financial_system_preservation",
+                                    "transaction_state_mapping",
+                                    "constitutional_consistency"
                                 ],
     "observables":  [
-
+                        "ledger_state",
+                        "settlement_status",
+                        "preservation_state"
                     ],
     "evidence_set":  [
-
+                         "ledger_record",
+                         "settlement_log",
+                         "evaluation_trace"
                      ],
     "derived_indicators":  [
-
+                               "financial_domain_mapped",
+                               "state_mapping_valid",
+                               "integrity_rules_preserved"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "financial event is domain-specific",
+                               "IPT integrity state remains constitutional",
+                               "mapping is traceable"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-083",
+                                 "result":  "PASS",
+                                 "domain":  "financial_system"
                              },
     "expected_metrics_contribution":  {
-
+                                          "cross_domain_cases":  1,
+                                          "financial_validation_cases":  1
                                       }
 }

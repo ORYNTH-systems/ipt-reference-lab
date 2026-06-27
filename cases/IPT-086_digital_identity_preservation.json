@@ -3,35 +3,50 @@
     "title":  "Digital Identity Preservation",
     "domain":  "Cross-Domain Validation",
     "bounded_system":  {
-
+                           "boundary_rule":  "Digital identity preservation shall evaluate continuity without equating credential validity with identity integrity.",
+                           "name":  "Digital Identity Preservation",
+                           "id":  "CD-086"
                        },
     "preservation_properties":  [
-
+                                    "digital_identity_preservation",
+                                    "credential_identity_separation",
+                                    "continuity_validation"
                                 ],
     "observables":  [
-
+                        "identity_record",
+                        "credential_status",
+                        "continuity_trace"
                     ],
     "evidence_set":  [
-
+                         "identity_registry",
+                         "credential_log",
+                         "continuity_validation_record"
                      ],
     "derived_indicators":  [
-
+                               "identity_continuity_traceable",
+                               "credential_not_substituted_for_identity",
+                               "preservation_admissible"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "admissibility":  "admissible",
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "integrity_state":  "preserved",
+                     "evidence_sufficiency":  "sufficient",
+                     "continuity":  "continuous"
                  },
     "runtime_assertions":  [
-
+                               "identity record exists",
+                               "credential status is separated from identity continuity",
+                               "continuity is evidence-supported"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-086",
+                                 "result":  "PASS",
+                                 "domain":  "digital_identity"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "digital_identity_validation_cases":  1
                                       }
 }
