@@ -55,3 +55,7 @@ Integrity Preservation Theory (IPT): A Constitutional Framework for the Evaluati
 Companion repository:
 
 https://github.com/ORYNTH-systems/ipt-reference-lab
+
+## DOI
+https://doi.org/10.5281/zenodo.20977023
+
