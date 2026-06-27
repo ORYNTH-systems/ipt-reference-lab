@@ -3,35 +3,52 @@
     "title":  "Non-Recoverable State",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "A non-recoverable state exists when identity-critical restoration is impossible or unsupported.",
+                           "name":  "Non-Recoverable State",
+                           "id":  "RC-050"
                        },
     "preservation_properties":  [
-
+                                    "non_recoverability",
+                                    "identity_critical_failure",
+                                    "terminal_state_classification"
                                 ],
     "observables":  [
-
+                        "identity_critical_loss",
+                        "restoration_possible",
+                        "terminal_state_record"
                     ],
     "evidence_set":  [
-
+                         "critical_loss_record",
+                         "restoration_failure_report",
+                         "terminal_classification"
                      ],
     "derived_indicators":  [
-
+                               "identity_critical_loss_present",
+                               "restoration_impossible",
+                               "non_recoverable_state_confirmed"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "non_recoverable",
+                     "degradation":  "irreversible",
+                     "continuity":  "collapsed",
+                     "integrity_state":  "functional_collapse",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "identity-critical loss is recorded",
+                               "restoration is impossible or unsupported",
+                               "recoverability equals non_recoverable"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-050",
+                                 "result":  "PASS",
+                                 "recoverability":  "non_recoverable",
+                                 "integrity_state":  "functional_collapse"
                              },
     "expected_metrics_contribution":  {
-
+                                          "non_recoverable_cases":  1,
+                                          "inadmissible_evaluations":  1,
+                                          "functional_collapse_states":  1
                                       }
 }

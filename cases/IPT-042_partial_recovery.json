@@ -3,35 +3,51 @@
     "title":  "Partial Recovery",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Partial recovery restores some but not all preservation properties.",
+                           "name":  "Partial Recovery System",
+                           "id":  "RC-042"
                        },
     "preservation_properties":  [
-
+                                    "partial_recovery",
+                                    "residual_degradation_detection",
+                                    "limited_restoration"
                                 ],
     "observables":  [
-
+                        "lost_properties",
+                        "restored_properties",
+                        "residual_loss"
                     ],
     "evidence_set":  [
-
+                         "recovery_log",
+                         "residual_loss_report",
+                         "property_status_record"
                      ],
     "derived_indicators":  [
-
+                               "some_properties_restored",
+                               "residual_loss_present",
+                               "identity_conditionally_preserved"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "partial",
+                     "degradation":  "localized",
+                     "continuity":  "partially_continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "partial restoration is detected",
+                               "residual loss is recorded",
+                               "conditional admissibility is applied"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-042",
+                                 "result":  "PASS",
+                                 "recoverability":  "partial",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "partial_recovery_cases":  1,
+                                          "stressed_states":  1
                                       }
 }

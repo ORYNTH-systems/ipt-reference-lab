@@ -3,35 +3,51 @@
     "title":  "Recovery Under Uncertainty",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Uncertain recovery cannot be treated as complete without sufficient evidence.",
+                           "name":  "Recovery Under Uncertainty",
+                           "id":  "RC-049"
                        },
     "preservation_properties":  [
-
+                                    "uncertain_recovery_classification",
+                                    "evidence_limited_restoration",
+                                    "admissibility_constraint"
                                 ],
     "observables":  [
-
+                        "recovery_claim",
+                        "uncertain_fields",
+                        "evidence_gap"
                     ],
     "evidence_set":  [
-
+                         "partial_recovery_log",
+                         "uncertainty_record",
+                         "evidence_gap_report"
                      ],
     "derived_indicators":  [
-
+                               "recovery_uncertain",
+                               "evidence_gap_present",
+                               "complete_recovery_not_asserted"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "uncertain",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "partial"
                  },
     "runtime_assertions":  [
-
+                               "uncertainty is recorded",
+                               "complete recovery is not asserted",
+                               "integrity_state equals indeterminate"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-049",
+                                 "result":  "PASS",
+                                 "recoverability":  "uncertain",
+                                 "integrity_state":  "indeterminate"
                              },
     "expected_metrics_contribution":  {
-
+                                          "uncertain_recovery_cases":  1,
+                                          "indeterminate_cases":  1
                                       }
 }

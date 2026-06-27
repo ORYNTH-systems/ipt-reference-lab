@@ -3,35 +3,52 @@
     "title":  "Multi-Stage Recovery",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Multi-stage recovery must validate each restoration stage before final recovery classification.",
+                           "name":  "Multi-Stage Recovery System",
+                           "id":  "RC-048"
                        },
     "preservation_properties":  [
-
+                                    "stagewise_recovery",
+                                    "intermediate_state_validation",
+                                    "recovery_sequence_integrity"
                                 ],
     "observables":  [
-
+                        "stage_1_status",
+                        "stage_2_status",
+                        "stage_3_status",
+                        "final_state"
                     ],
     "evidence_set":  [
-
+                         "stage_recovery_logs",
+                         "intermediate_validations",
+                         "final_validation"
                      ],
     "derived_indicators":  [
-
+                               "stages_completed",
+                               "intermediate_states_valid",
+                               "final_recovery_supported"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "multi_stage_complete",
+                     "degradation":  "resolved",
+                     "continuity":  "recovered",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "each recovery stage is recorded",
+                               "intermediate validations exist",
+                               "final state is preserved"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-048",
+                                 "result":  "PASS",
+                                 "recoverability":  "multi_stage_complete",
+                                 "integrity_state":  "preserved"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "multi_stage_recovery_cases":  1
                                       }
 }

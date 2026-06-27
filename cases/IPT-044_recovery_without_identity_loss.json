@@ -3,35 +3,51 @@
     "title":  "Recovery Without Identity Loss",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Recovery does not create identity loss when continuity-critical properties remain intact.",
+                           "name":  "Recovery Without Identity Loss",
+                           "id":  "RC-044"
                        },
     "preservation_properties":  [
-
+                                    "identity_preserving_recovery",
+                                    "continuity_retention",
+                                    "restoration_traceability"
                                 ],
     "observables":  [
-
+                        "continuity_record",
+                        "recovery_record",
+                        "identity_property_status"
                     ],
     "evidence_set":  [
-
+                         "pre_recovery_identity_record",
+                         "post_recovery_identity_record",
+                         "restoration_log"
                      ],
     "derived_indicators":  [
-
+                               "identity_preserved",
+                               "continuity_unbroken",
+                               "recovery_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "complete",
+                     "degradation":  "resolved",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "identity record is continuous",
+                               "recovery does not alter identity",
+                               "integrity_state equals preserved"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-044",
+                                 "result":  "PASS",
+                                 "identity_loss":  "none",
+                                 "recoverability":  "complete"
                              },
     "expected_metrics_contribution":  {
-
+                                          "preserved_states":  1,
+                                          "identity_preserving_recovery_cases":  1
                                       }
 }

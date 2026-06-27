@@ -3,35 +3,51 @@
     "title":  "Delayed Recovery",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Delayed recovery must preserve temporal separation between degraded and recovered states.",
+                           "name":  "Delayed Recovery System",
+                           "id":  "RC-047"
                        },
     "preservation_properties":  [
-
+                                    "temporal_recovery_tracking",
+                                    "state_transition_integrity",
+                                    "delayed_restoration"
                                 ],
     "observables":  [
-
+                        "degradation_time",
+                        "recovery_time",
+                        "state_transition_record"
                     ],
     "evidence_set":  [
-
+                         "temporal_log",
+                         "recovery_validation",
+                         "state_history"
                      ],
     "derived_indicators":  [
-
+                               "recovery_delayed",
+                               "transition_recorded",
+                               "recovered_after_interval"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "delayed",
+                     "degradation":  "resolved_after_delay",
+                     "continuity":  "recovered",
+                     "integrity_state":  "recovering",
+                     "admissibility":  "admissible_after_recovery",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "degradation time exists",
+                               "recovery time exists",
+                               "state transition is recorded"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-047",
+                                 "result":  "PASS",
+                                 "recoverability":  "delayed",
+                                 "integrity_state":  "recovering"
                              },
     "expected_metrics_contribution":  {
-
+                                          "recovering_states":  1,
+                                          "delayed_recovery_cases":  1
                                       }
 }

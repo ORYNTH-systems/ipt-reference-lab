@@ -3,35 +3,51 @@
     "title":  "Recovery with Residual Loss",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Recovery with residual loss preserves identity only if residual loss is non-critical.",
+                           "name":  "Residual Loss Recovery System",
+                           "id":  "RC-043"
                        },
     "preservation_properties":  [
-
+                                    "residual_loss_classification",
+                                    "identity_margin_retention",
+                                    "recovery_admissibility"
                                 ],
     "observables":  [
-
+                        "recovered_properties",
+                        "residual_loss_type",
+                        "identity_margin"
                     ],
     "evidence_set":  [
-
+                         "residual_loss_report",
+                         "identity_margin_report",
+                         "recovery_validation"
                      ],
     "derived_indicators":  [
-
+                               "residual_loss_detected",
+                               "loss_noncritical",
+                               "identity_margin_sufficient"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "partial",
+                     "degradation":  "localized",
+                     "continuity":  "continuous",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "residual loss is classified",
+                               "identity margin remains sufficient",
+                               "admissibility is conditional"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-043",
+                                 "admissibility":  "conditionally_admissible",
+                                 "result":  "PASS",
+                                 "residual_loss":  "noncritical"
                              },
     "expected_metrics_contribution":  {
-
+                                          "conditional_admissibility":  1,
+                                          "residual_loss_recovery_cases":  1
                                       }
 }

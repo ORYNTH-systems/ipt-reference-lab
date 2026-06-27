@@ -3,35 +3,51 @@
     "title":  "Complete Recovery",
     "domain":  "Recoverability",
     "bounded_system":  {
-
+                           "boundary_rule":  "Complete recovery restores all identity-critical preservation properties.",
+                           "name":  "Complete Recovery System",
+                           "id":  "RC-041"
                        },
     "preservation_properties":  [
-
+                                    "complete_recovery",
+                                    "identity_restoration",
+                                    "post_recovery_validation"
                                 ],
     "observables":  [
-
+                        "pre_degradation_state",
+                        "degraded_state",
+                        "recovered_state"
                     ],
     "evidence_set":  [
-
+                         "degradation_record",
+                         "recovery_log",
+                         "validation_report"
                      ],
     "derived_indicators":  [
-
+                               "all_properties_restored",
+                               "identity_continuous",
+                               "recovery_complete"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "complete",
+                     "degradation":  "resolved",
+                     "continuity":  "recovered",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "recovered state exists",
+                               "all identity-critical properties are restored",
+                               "integrity_state equals preserved"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-041",
+                                 "result":  "PASS",
+                                 "recoverability":  "complete",
+                                 "integrity_state":  "preserved"
                              },
     "expected_metrics_contribution":  {
-
+                                          "complete_recovery_cases":  1,
+                                          "preserved_states":  1
                                       }
 }
