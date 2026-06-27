@@ -1,0 +1,162 @@
+﻿[
+  {
+    "range": "IPT-001-010",
+    "category": "Bounded System Definition",
+    "cases": [
+      ["IPT-001", "Constitutional Bounded System Definition"],
+      ["IPT-002", "Evaluative Object Delimitation"],
+      ["IPT-003", "Boundary Ambiguity Resolution"],
+      ["IPT-004", "External Dependency Separation"],
+      ["IPT-005", "Nested Bounded Systems"],
+      ["IPT-006", "Multi-System Boundary Isolation"],
+      ["IPT-007", "Dynamic Boundary Evolution"],
+      ["IPT-008", "Component Membership Validation"],
+      ["IPT-009", "Boundary Drift Detection"],
+      ["IPT-010", "Invalid Evaluative Object"]
+    ]
+  },
+  {
+    "range": "IPT-011-020",
+    "category": "Evidence Sufficiency",
+    "cases": [
+      ["IPT-011", "Complete Evidence Availability"],
+      ["IPT-012", "Partial Evidence Evaluation"],
+      ["IPT-013", "Missing Critical Evidence"],
+      ["IPT-014", "Conflicting Evidence Sources"],
+      ["IPT-015", "Delayed Evidence Arrival"],
+      ["IPT-016", "Corrupted Evidence"],
+      ["IPT-017", "Untrusted Evidence Source"],
+      ["IPT-018", "Insufficient Evidence Threshold"],
+      ["IPT-019", "Evidence Recovery"],
+      ["IPT-020", "Indeterminate Evaluation"]
+    ]
+  },
+  {
+    "range": "IPT-021-030",
+    "category": "Continuity",
+    "cases": [
+      ["IPT-021", "Structural Continuity"],
+      ["IPT-022", "Functional Continuity"],
+      ["IPT-023", "Evidentiary Continuity"],
+      ["IPT-024", "Partial Continuity Preservation"],
+      ["IPT-025", "Hidden Continuity Loss"],
+      ["IPT-026", "Progressive Continuity Drift"],
+      ["IPT-027", "Continuity Recovery"],
+      ["IPT-028", "Continuity Fragmentation"],
+      ["IPT-029", "Identity Transition Evaluation"],
+      ["IPT-030", "Continuity Collapse"]
+    ]
+  },
+  {
+    "range": "IPT-031-040",
+    "category": "Degradation",
+    "cases": [
+      ["IPT-031", "Localized Degradation"],
+      ["IPT-032", "Progressive Degradation"],
+      ["IPT-033", "Sudden Degradation"],
+      ["IPT-034", "Cascading Degradation"],
+      ["IPT-035", "Hidden Internal Degradation"],
+      ["IPT-036", "External Dependency Degradation"],
+      ["IPT-037", "Compound Degradation"],
+      ["IPT-038", "Irreversible Degradation"],
+      ["IPT-039", "Recoverable Degradation"],
+      ["IPT-040", "Critical Preservation Failure"]
+    ]
+  },
+  {
+    "range": "IPT-041-050",
+    "category": "Recoverability",
+    "cases": [
+      ["IPT-041", "Complete Recovery"],
+      ["IPT-042", "Partial Recovery"],
+      ["IPT-043", "Recovery with Residual Loss"],
+      ["IPT-044", "Recovery Without Identity Loss"],
+      ["IPT-045", "Recovery with Identity Change"],
+      ["IPT-046", "Failed Recovery"],
+      ["IPT-047", "Delayed Recovery"],
+      ["IPT-048", "Multi-Stage Recovery"],
+      ["IPT-049", "Recovery Under Uncertainty"],
+      ["IPT-050", "Non-Recoverable State"]
+    ]
+  },
+  {
+    "range": "IPT-051-060",
+    "category": "Integrity State Architecture",
+    "cases": [
+      ["IPT-051", "Preserved"],
+      ["IPT-052", "Stressed"],
+      ["IPT-053", "Drifting"],
+      ["IPT-054", "Degraded"],
+      ["IPT-055", "Fragmented"],
+      ["IPT-056", "Functional Collapse"],
+      ["IPT-057", "Recovering"],
+      ["IPT-058", "Indeterminate"],
+      ["IPT-059", "Mixed Integrity State"],
+      ["IPT-060", "State Transition Validation"]
+    ]
+  },
+  {
+    "range": "IPT-061-070",
+    "category": "Measurement Architecture",
+    "cases": [
+      ["IPT-061", "Observable Acquisition"],
+      ["IPT-062", "Derived Indicator Mapping"],
+      ["IPT-063", "Interpretation Separation"],
+      ["IPT-064", "Measurement Normalization"],
+      ["IPT-065", "Observable Drift"],
+      ["IPT-066", "Measurement Noise"],
+      ["IPT-067", "Measurement Bias Detection"],
+      ["IPT-068", "Admissible Transformation"],
+      ["IPT-069", "Invalid Measurement Chain"],
+      ["IPT-070", "Measurement Integrity Validation"]
+    ]
+  },
+  {
+    "range": "IPT-071-080",
+    "category": "Implementation Fidelity",
+    "cases": [
+      ["IPT-071", "Declared Bounded System"],
+      ["IPT-072", "Estimator Consistency"],
+      ["IPT-073", "Weight Configuration Validation"],
+      ["IPT-074", "Threshold Declaration"],
+      ["IPT-075", "Calibration Stability"],
+      ["IPT-076", "Proxy Substitution Detection"],
+      ["IPT-077", "Implementation Drift"],
+      ["IPT-078", "Audit Replay Consistency"],
+      ["IPT-079", "Version Compatibility"],
+      ["IPT-080", "Implementation Integrity Failure"]
+    ]
+  },
+  {
+    "range": "IPT-081-090",
+    "category": "Cross-Domain Validation",
+    "cases": [
+      ["IPT-081", "Healthcare Preservation"],
+      ["IPT-082", "Agentic AI Preservation"],
+      ["IPT-083", "Financial System Preservation"],
+      ["IPT-084", "Infrastructure Preservation"],
+      ["IPT-085", "Supply Chain Preservation"],
+      ["IPT-086", "Digital Identity Preservation"],
+      ["IPT-087", "Autonomous Vehicle Preservation"],
+      ["IPT-088", "Robotic System Preservation"],
+      ["IPT-089", "Distributed Network Preservation"],
+      ["IPT-090", "Cross-Domain Invariance Validation"]
+    ]
+  },
+  {
+    "range": "IPT-091-100",
+    "category": "Constitutional Boundary Protection",
+    "cases": [
+      ["IPT-091", "IPT vs UAA Boundary"],
+      ["IPT-092", "IPT vs EIP Boundary"],
+      ["IPT-093", "IPT vs AOMS Boundary"],
+      ["IPT-094", "IPT vs POB Boundary"],
+      ["IPT-095", "Non-Sovereign Evaluation"],
+      ["IPT-096", "Evaluation Admissibility"],
+      ["IPT-097", "Preservation vs Performance"],
+      ["IPT-098", "Preservation vs Reliability"],
+      ["IPT-099", "Preservation vs Safety"],
+      ["IPT-100", "Constitutional Integrity Evaluation"]
+    ]
+  }
+]

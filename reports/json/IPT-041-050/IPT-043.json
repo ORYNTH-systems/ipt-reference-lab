@@ -1,19 +1,55 @@
 {
     "schema_version": "1.0",
     "case_id": "IPT-043",
-    "title": "Reserved Case 043",
+    "title": "Recovery with Residual Loss",
     "category": "Recoverability",
-    "bounded_system": null,
+    "bounded_system": {
+        "declared": true,
+        "object": "runtime_declared_bounded_system"
+    },
     "observables": [],
     "evidence": [],
     "derived_indicators": [],
-    "evidence_sufficiency": null,
-    "continuity": null,
-    "degradation": null,
-    "recoverability": null,
-    "integrity_preservation_support": null,
-    "integrity_state": null,
-    "admissibility": null,
-    "runtime_assertions": [],
-    "metrics": []
+    "evidence_sufficiency": {
+        "score": null,
+        "status": "runtime_computed"
+    },
+    "continuity": {
+        "structural": null,
+        "functional": null,
+        "behavioral": null,
+        "evidentiary": null,
+        "temporal": null,
+        "status": "runtime_computed"
+    },
+    "degradation": {
+        "score": null,
+        "status": "runtime_computed"
+    },
+    "recoverability": {
+        "score": null,
+        "status": "runtime_computed"
+    },
+    "integrity_preservation_support": {
+        "score": null,
+        "status": "runtime_computed"
+    },
+    "integrity_state": "runtime_computed",
+    "admissibility": "runtime_computed",
+    "runtime_assertions": [
+        "bounded_system_declared",
+        "evidence_separated_from_interpretation",
+        "evidence_sufficiency_constrains_evaluation",
+        "continuity_distinct_from_integrity",
+        "degradation_distinct_from_performance",
+        "recoverability_distinct_from_current_state",
+        "non_sovereign_output"
+    ],
+    "metrics": [
+        "case_count",
+        "category_coverage",
+        "admissibility_coverage",
+        "integrity_state_coverage",
+        "runtime_replay_coverage"
+    ]
 }

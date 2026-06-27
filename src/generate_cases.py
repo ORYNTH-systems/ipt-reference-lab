@@ -1,9 +1,11 @@
 ﻿"""
 Integrity Preservation Theory (IPT)
-Reference Corpus Generator
+Canonical Corpus Compiler
 
-This generator is the authoritative source for all
-Markdown case files and JSON evidence templates.
+case_definitions.json is the single source of truth.
+This compiler generates:
+- Markdown case files
+- JSON evidence templates
 
 Repository Version: 1.0
 """
@@ -12,45 +14,14 @@ from pathlib import Path
 import json
 
 ROOT = Path(__file__).resolve().parent.parent
+DEFINITIONS_PATH = ROOT / "src" / "case_definitions.json"
+SCHEMA_VERSION = "1.0"
 
-CASE_GROUPS = [
-    ("IPT-001-010","Bounded System Definition"),
-    ("IPT-011-020","Evidence Sufficiency"),
-    ("IPT-021-030","Continuity"),
-    ("IPT-031-040","Degradation"),
-    ("IPT-041-050","Recoverability"),
-    ("IPT-051-060","Integrity State Architecture"),
-    ("IPT-061-070","Measurement Architecture"),
-    ("IPT-071-080","Implementation Fidelity"),
-    ("IPT-081-090","Cross-Domain Validation"),
-    ("IPT-091-100","Constitutional Boundary Protection"),
-]
+def load_definitions():
+    return json.loads(DEFINITIONS_PATH.read_text(encoding="utf-8-sig"))
 
-CASE_TITLES = {
-1:"Constitutional Bounded System Definition",
-2:"Evaluative Object Delimitation",
-3:"Boundary Ambiguity Resolution",
-4:"External Dependency Separation",
-5:"Nested Bounded Systems",
-6:"Multi-System Boundary Isolation",
-7:"Dynamic Boundary Evolution",
-8:"Component Membership Validation",
-9:"Boundary Drift Detection",
-10:"Invalid Evaluative Object",
-}
-
-SCHEMA_VERSION="1.0"
-
-def case_title(case_number):
-    return CASE_TITLES.get(case_number,f"Reserved Case {case_number:03}")
-
-def build_markdown(case_id,title,category):
-
-    return f"""# {case_id}
-
-## Title
-
-{title}
+def markdown_for(case_id, title, category):
+    return f"""# {case_id} — {title}
 
 ## Category
 
@@ -58,124 +29,174 @@ def build_markdown(case_id,title,category):
 
 ## Constitutional Objective
 
-Preservation-oriented integrity evaluation.
+Evaluate whether the bounded system remains sufficiently preserved to support an admissible integrity judgment.
 
 ## Bounded System
 
-TBD by runtime.
+Runtime-declared bounded evaluative object.
 
 ## Evaluation Scope
 
-TBD.
+Preservation-oriented integrity evaluation under declared observables, evidence sufficiency, continuity, degradation, recoverability, and admissibility constraints.
 
 ## Protected Preservation Properties
 
-TBD.
+- Bounded object identity
+- Evidence separation
+- Continuity distinction
+- Degradation distinction
+- Recoverability distinction
+- Evidence sufficiency
+- Non-sovereign evaluation
 
 ## Input Observables
 
-TBD.
+Defined in the matching JSON evidence artifact.
 
 ## Evidence Set
 
-TBD.
+Defined in the matching JSON evidence artifact.
 
 ## Derived Indicators
 
-TBD.
+Defined in the matching JSON evidence artifact.
 
 ## Evidence Sufficiency
 
-TBD.
+Computed by runtime.
 
 ## Expected Continuity
 
-TBD.
+Computed by runtime.
 
 ## Expected Degradation
 
-TBD.
+Computed by runtime.
 
 ## Expected Recoverability
 
-TBD.
+Computed by runtime.
 
 ## Expected Integrity Preservation Support
 
-TBD.
+Computed by runtime.
 
 ## Expected Integrity State
 
-TBD.
+Computed by runtime.
 
 ## Expected Admissibility
 
-TBD.
+Computed by runtime.
 
 ## Runtime Assertions
 
-TBD.
+The runtime shall preserve boundedness, evidence separation, admissibility constraint, continuity distinction, degradation distinction, recoverability distinction, and non-sovereignty.
 
 ## Expected JSON Output
 
-Generated from matching JSON artifact.
+Generated from reports/json/{case_id}.json.
 
 ## Expected Metrics Contribution
 
-Automatically collected.
+This case contributes to category coverage, admissibility coverage, integrity-state coverage, and replay validation.
 
-Schema Version
+## Implementation Notes
 
-{SCHEMA_VERSION}
+This case is generated from src/case_definitions.json by src/generate_cases.py.
+
+## Repository References
+
+- doctrine/IPT_DOCTRINE.md
+- doctrine/CONSTITUTIONAL_INVARIANTS.md
+- doctrine/EVALUATION_AXIOMS.md
+- spec/IPT_REFERENCE_SPEC.md
+- cases/EXECUTABLE_CASE_SPECIFICATION.md
+
+Schema Version: {SCHEMA_VERSION}
 """
 
-def build_json(case_id,title,category):
-
+def json_for(case_id, title, category):
     return {
-        "schema_version":SCHEMA_VERSION,
-        "case_id":case_id,
-        "title":title,
-        "category":category,
-        "bounded_system":None,
-        "observables":[],
-        "evidence":[],
-        "derived_indicators":[],
-        "evidence_sufficiency":None,
-        "continuity":None,
-        "degradation":None,
-        "recoverability":None,
-        "integrity_preservation_support":None,
-        "integrity_state":None,
-        "admissibility":None,
-        "runtime_assertions":[],
-        "metrics":[]
+        "schema_version": SCHEMA_VERSION,
+        "case_id": case_id,
+        "title": title,
+        "category": category,
+        "bounded_system": {
+            "declared": True,
+            "object": "runtime_declared_bounded_system"
+        },
+        "observables": [],
+        "evidence": [],
+        "derived_indicators": [],
+        "evidence_sufficiency": {
+            "score": None,
+            "status": "runtime_computed"
+        },
+        "continuity": {
+            "structural": None,
+            "functional": None,
+            "behavioral": None,
+            "evidentiary": None,
+            "temporal": None,
+            "status": "runtime_computed"
+        },
+        "degradation": {
+            "score": None,
+            "status": "runtime_computed"
+        },
+        "recoverability": {
+            "score": None,
+            "status": "runtime_computed"
+        },
+        "integrity_preservation_support": {
+            "score": None,
+            "status": "runtime_computed"
+        },
+        "integrity_state": "runtime_computed",
+        "admissibility": "runtime_computed",
+        "runtime_assertions": [
+            "bounded_system_declared",
+            "evidence_separated_from_interpretation",
+            "evidence_sufficiency_constrains_evaluation",
+            "continuity_distinct_from_integrity",
+            "degradation_distinct_from_performance",
+            "recoverability_distinct_from_current_state",
+            "non_sovereign_output"
+        ],
+        "metrics": [
+            "case_count",
+            "category_coverage",
+            "admissibility_coverage",
+            "integrity_state_coverage",
+            "runtime_replay_coverage"
+        ]
     }
 
-case_number=1
+def compile_cases():
+    definitions = load_definitions()
+    total = 0
 
-for folder,category in CASE_GROUPS:
+    for group in definitions:
+        folder = group["range"]
+        category = group["category"]
+        md_dir = ROOT / "cases" / folder
+        json_dir = ROOT / "reports" / "json" / folder
+        md_dir.mkdir(parents=True, exist_ok=True)
+        json_dir.mkdir(parents=True, exist_ok=True)
 
-    md_dir=ROOT/"cases"/folder
-    json_dir=ROOT/"reports"/"json"/folder
+        for case_id, title in group["cases"]:
+            (md_dir / f"{case_id}.md").write_text(
+                markdown_for(case_id, title, category),
+                encoding="utf-8"
+            )
+            (json_dir / f"{case_id}.json").write_text(
+                json.dumps(json_for(case_id, title, category), indent=4),
+                encoding="utf-8"
+            )
+            total += 1
 
-    json_dir.mkdir(parents=True,exist_ok=True)
+    print(f"Compiled {total} IPT cases from canonical definitions.")
 
-    for _ in range(10):
-
-        case_id=f"IPT-{case_number:03}"
-        title=case_title(case_number)
-
-        (md_dir/f"{case_id}.md").write_text(
-            build_markdown(case_id,title,category),
-            encoding="utf-8"
-        )
-
-        (json_dir/f"{case_id}.json").write_text(
-            json.dumps(build_json(case_id,title,category),indent=4),
-            encoding="utf-8"
-        )
-
-        case_number+=1
-
-print("Generated 100 IPT markdown cases.")
-print("Generated 100 IPT JSON templates.")
+if __name__ == "__main__":
+    compile_cases()
