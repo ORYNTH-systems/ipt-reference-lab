@@ -3,35 +3,57 @@
     "title":  "Constitutional Bounded System Definition",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "excluded_components":  [
+                                                       "external observers",
+                                                       "unrelated dependencies",
+                                                       "downstream consumers"
+                                                   ],
+                           "boundary_rule":  "The system includes only components necessary to evaluate preservation of the declared object.",
+                           "name":  "Primary Evaluative System",
+                           "id":  "BS-001"
                        },
     "preservation_properties":  [
-
+                                    "boundary_determinacy",
+                                    "component_closure",
+                                    "evaluative_object_validity"
                                 ],
     "observables":  [
-
+                        "declared_components",
+                        "declared_boundary",
+                        "excluded_dependencies"
                     ],
     "evidence_set":  [
-
+                         "system_manifest",
+                         "component_registry",
+                         "boundary_declaration"
                      ],
     "derived_indicators":  [
-
+                               "boundary_defined",
+                               "components_enumerated",
+                               "external_dependencies_excluded"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "bounded_system.id exists",
+                               "bounded_system.boundary_rule exists",
+                               "evidence_set includes system_manifest",
+                               "expected.admissibility equals admissible"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-001",
+                                 "admissibility":  "admissible",
+                                 "result":  "PASS",
+                                 "integrity_state":  "preserved"
                              },
     "expected_metrics_contribution":  {
-
+                                          "admissible_evaluations":  1,
+                                          "bounded_system_definition":  1
                                       }
 }

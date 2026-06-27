@@ -3,35 +3,44 @@
     "title":  "External Dependency Separation",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Dependencies may inform evaluation but are not treated as internal components.",
+                           "name":  "System With External Dependencies",
+                           "id":  "BS-004"
                        },
     "preservation_properties":  [
-
+                                    "dependency_separation",
+                                    "internal_external_distinction"
                                 ],
     "observables":  [
-
+                        "internal_components",
+                        "external_dependencies"
                     ],
     "evidence_set":  [
-
+                         "component_registry",
+                         "dependency_map"
                      ],
     "derived_indicators":  [
-
+                               "dependencies_classified",
+                               "no_external_component_inclusion"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "external dependencies are labeled external",
+                               "internal component set excludes external dependencies"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-004",
+                                 "result":  "PASS",
+                                 "dependency_handling":  "separated"
                              },
     "expected_metrics_contribution":  {
-
+                                          "external_dependency_separation":  1
                                       }
 }

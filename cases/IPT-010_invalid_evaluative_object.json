@@ -3,35 +3,48 @@
     "title":  "Invalid Evaluative Object",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Evaluation must fail when the object cannot be constitutionally delimited.",
+                           "name":  "Invalid Evaluative Object",
+                           "id":  "BS-010"
                        },
     "preservation_properties":  [
-
+                                    "invalid_object_rejection",
+                                    "evaluation_admissibility_control"
                                 ],
     "observables":  [
-
+                        "object_declaration",
+                        "boundary_failure",
+                        "missing_identity"
                     ],
     "evidence_set":  [
-
+                         "invalid_object_record",
+                         "failed_boundary_attempt"
                      ],
     "derived_indicators":  [
-
+                               "object_invalid",
+                               "evaluation_blocked"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "indeterminate",
+                     "degradation":  "indeterminate",
+                     "continuity":  "indeterminate",
+                     "integrity_state":  "indeterminate",
+                     "admissibility":  "inadmissible",
+                     "evidence_sufficiency":  "insufficient"
                  },
     "runtime_assertions":  [
-
+                               "invalid object is rejected",
+                               "admissibility equals inadmissible",
+                               "no preservation judgment is issued"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-010",
+                                 "admissibility":  "inadmissible",
+                                 "result":  "PASS",
+                                 "reason":  "invalid_evaluative_object"
                              },
     "expected_metrics_contribution":  {
-
+                                          "invalid_objects":  1,
+                                          "inadmissible_evaluations":  1
                                       }
 }

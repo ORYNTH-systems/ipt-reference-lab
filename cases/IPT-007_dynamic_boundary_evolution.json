@@ -3,35 +3,48 @@
     "title":  "Dynamic Boundary Evolution",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Boundary changes are valid only when declared and evidence-supported.",
+                           "name":  "Dynamic Boundary System",
+                           "id":  "BS-007"
                        },
     "preservation_properties":  [
-
+                                    "controlled_boundary_evolution",
+                                    "change_traceability"
                                 ],
     "observables":  [
-
+                        "prior_boundary",
+                        "new_boundary",
+                        "change_record"
                     ],
     "evidence_set":  [
-
+                         "boundary_version_1",
+                         "boundary_version_2",
+                         "change_authorization"
                      ],
     "derived_indicators":  [
-
+                               "boundary_change_detected",
+                               "change_authorized",
+                               "identity_preserved"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "prior boundary exists",
+                               "new boundary exists",
+                               "change authorization exists"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-007",
+                                 "result":  "PASS",
+                                 "boundary_evolution":  "valid"
                              },
     "expected_metrics_contribution":  {
-
+                                          "dynamic_boundary_validation":  1
                                       }
 }

@@ -3,35 +3,46 @@
     "title":  "Boundary Ambiguity Resolution",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Ambiguity must be resolved before evaluation proceeds.",
+                           "name":  "Ambiguous Boundary Case",
+                           "id":  "BS-003"
                        },
     "preservation_properties":  [
-
+                                    "ambiguity_detection",
+                                    "boundary_resolution"
                                 ],
     "observables":  [
-
+                        "conflicting_boundary_claims",
+                        "resolution_record"
                     ],
     "evidence_set":  [
-
+                         "boundary_claim_a",
+                         "boundary_claim_b",
+                         "resolution_basis"
                      ],
     "derived_indicators":  [
-
+                               "ambiguity_detected",
+                               "ambiguity_resolved"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient_after_resolution"
                  },
     "runtime_assertions":  [
-
+                               "conflict is detected",
+                               "resolution_basis exists",
+                               "evaluation proceeds only after resolution"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-003",
+                                 "result":  "PASS",
+                                 "ambiguity":  "resolved"
                              },
     "expected_metrics_contribution":  {
-
+                                          "boundary_ambiguity_resolved":  1
                                       }
 }

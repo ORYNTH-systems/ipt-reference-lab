@@ -3,35 +3,45 @@
     "title":  "Component Membership Validation",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Each component must be validated before inclusion.",
+                           "name":  "Component Membership System",
+                           "id":  "BS-008"
                        },
     "preservation_properties":  [
-
+                                    "component_membership_validity",
+                                    "membership_evidence"
                                 ],
     "observables":  [
-
+                        "component_list",
+                        "membership_criteria",
+                        "validation_status"
                     ],
     "evidence_set":  [
-
+                         "component_registry",
+                         "membership_validation_record"
                      ],
     "derived_indicators":  [
-
+                               "all_components_validated",
+                               "no_unverified_members"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "each component has validation_status",
+                               "no component is admitted without evidence"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-008",
+                                 "result":  "PASS",
+                                 "membership":  "validated"
                              },
     "expected_metrics_contribution":  {
-
+                                          "component_membership_validation":  1
                                       }
 }

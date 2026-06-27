@@ -3,35 +3,49 @@
     "title":  "Boundary Drift Detection",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Unapproved boundary drift must be detected and classified.",
+                           "name":  "Boundary Drift System",
+                           "id":  "BS-009"
                        },
     "preservation_properties":  [
-
+                                    "boundary_drift_detection",
+                                    "unauthorized_expansion_prevention"
                                 ],
     "observables":  [
-
+                        "baseline_boundary",
+                        "current_boundary",
+                        "difference_vector"
                     ],
     "evidence_set":  [
-
+                         "baseline_manifest",
+                         "current_manifest",
+                         "boundary_diff"
                      ],
     "derived_indicators":  [
-
+                               "drift_detected",
+                               "drift_classified"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "recoverable",
+                     "degradation":  "localized",
+                     "continuity":  "stressed",
+                     "integrity_state":  "stressed",
+                     "admissibility":  "conditionally_admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "baseline boundary exists",
+                               "current boundary exists",
+                               "boundary difference is computed"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-009",
+                                 "drift":  "detected",
+                                 "result":  "PASS",
+                                 "integrity_state":  "stressed"
                              },
     "expected_metrics_contribution":  {
-
+                                          "stressed_states":  1,
+                                          "boundary_drift_detected":  1
                                       }
 }

@@ -3,35 +3,46 @@
     "title":  "Multi-System Boundary Isolation",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Adjacent systems must remain independently evaluable.",
+                           "name":  "Multiple Bounded Systems",
+                           "id":  "BS-006"
                        },
     "preservation_properties":  [
-
+                                    "multi_system_isolation",
+                                    "cross_boundary_noncontamination"
                                 ],
     "observables":  [
-
+                        "system_a_boundary",
+                        "system_b_boundary",
+                        "interaction_points"
                     ],
     "evidence_set":  [
-
+                         "system_a_manifest",
+                         "system_b_manifest",
+                         "interaction_log"
                      ],
     "derived_indicators":  [
-
+                               "systems_distinct",
+                               "interaction_not_membership"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "system A and B have distinct identifiers",
+                               "interaction points do not collapse boundaries"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-006",
+                                 "isolation":  "preserved",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "boundary_isolation":  1
                                       }
 }

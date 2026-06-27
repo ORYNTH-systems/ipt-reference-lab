@@ -3,35 +3,46 @@
     "title":  "Evaluative Object Delimitation",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Only the declared evaluative object may be assessed.",
+                           "name":  "Delimited Evaluative Object",
+                           "id":  "BS-002"
                        },
     "preservation_properties":  [
-
+                                    "object_delimitation",
+                                    "scope_control"
                                 ],
     "observables":  [
-
+                        "object_identifier",
+                        "scope_statement",
+                        "exclusion_list"
                     ],
     "evidence_set":  [
-
+                         "object_declaration",
+                         "scope_record"
                      ],
     "derived_indicators":  [
-
+                               "object_identified",
+                               "scope_not_overbroad"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "object_identifier exists",
+                               "scope_statement exists",
+                               "excluded objects are not evaluated"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-002",
+                                 "admissibility":  "admissible",
+                                 "result":  "PASS"
                              },
     "expected_metrics_contribution":  {
-
+                                          "object_delimitation":  1
                                       }
 }

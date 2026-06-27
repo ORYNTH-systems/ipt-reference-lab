@@ -3,35 +3,48 @@
     "title":  "Nested Bounded Systems",
     "domain":  "Bounded System Definition",
     "bounded_system":  {
-
+                           "boundary_rule":  "Nested systems must preserve parent-child boundary distinction.",
+                           "name":  "Nested Bounded Systems",
+                           "id":  "BS-005"
                        },
     "preservation_properties":  [
-
+                                    "nested_boundary_integrity",
+                                    "parent_child_separation"
                                 ],
     "observables":  [
-
+                        "parent_boundary",
+                        "child_boundary",
+                        "membership_map"
                     ],
     "evidence_set":  [
-
+                         "parent_manifest",
+                         "child_manifest",
+                         "nesting_record"
                      ],
     "derived_indicators":  [
-
+                               "parent_defined",
+                               "child_defined",
+                               "nesting_valid"
                            ],
     "expected":  {
-                     "evidence_sufficiency":  null,
-                     "continuity":  null,
-                     "degradation":  null,
-                     "recoverability":  null,
-                     "integrity_state":  null,
-                     "admissibility":  null
+                     "recoverability":  "not_required",
+                     "degradation":  "none",
+                     "continuity":  "continuous",
+                     "integrity_state":  "preserved",
+                     "admissibility":  "admissible",
+                     "evidence_sufficiency":  "sufficient"
                  },
     "runtime_assertions":  [
-
+                               "parent boundary exists",
+                               "child boundary exists",
+                               "child does not overwrite parent identity"
                            ],
     "expected_json_output":  {
-
+                                 "case_id":  "IPT-005",
+                                 "result":  "PASS",
+                                 "nesting":  "valid"
                              },
     "expected_metrics_contribution":  {
-
+                                          "nested_system_validation":  1
                                       }
 }
